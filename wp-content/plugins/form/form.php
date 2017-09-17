@@ -1,4 +1,7 @@
-<?php get_header(); ?>
+<?php get_header(); 
+/**
+* Plugin Name: form */
+?>
  
   <div id="primary" class="site-content">
     <div id="content" role="main">
