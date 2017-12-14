@@ -64,7 +64,7 @@ function custom_registration_function() {
                     <div class="radio">
                       <label>
                         <input type="radio" name="visionRestr" id="severeRestr" value="severeRestr">
-                        I am not legally blind. I have less severe restr in my vision. 
+                        I am not legally blind. I have less severe restrictions in my vision. 
                         Explain: 
                         <input type="text" id="visionSevereRestrExplain"></input>
                       </label>
@@ -75,7 +75,7 @@ function custom_registration_function() {
     </div>
 
     <button class="accordion">Speaking</button>
-    <div class="panel" style="display: block;">
+    <div class="panel">
       <table>
             <tr>
                 <td>

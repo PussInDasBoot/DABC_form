@@ -27,8 +27,16 @@ document.addEventListener("DOMContentLoaded", function(e) {
         // TODO refactor with ES6 and destructuring
         var speechSevereRestrictionFreq = document.querySelector("#speechSevereRestrictionFreq");
         // Show speechSevereRestrictionFreq div only when there is a severe restriction
-        document.querySelector("input[name=speechRestr]:checked").value=="severeRestr" ? speechSevereRestrictionFreq.removeAttribute("hidden") : speechSevereRestrictionFreq.setAttribute("hidden", true);
-        console.log(speechSevereRestrictionFreq);
+        if (document.querySelector("input[name=speechRestr]:checked") && document.querySelector("input[name=speechRestr]:checked").value=="severeRestr") {
+            speechSevereRestrictionFreq.removeAttribute("hidden");
+        } else { 
+            speechSevereRestrictionFreq.setAttribute("hidden", true);
+            for (var s of document.getElementsByName("speechRestrFreq")) {
+                // clear speechSevereRestrictionFreq selection when there is not a severe restriction
+                s.checked = false;
+            }
+
+        }
         // switch (name+id) {
         //     case "speechRestrsevereRestr":
         //         document.querySelector("#speechSevereRestrictionFreq").removeAttribute("hidden");
