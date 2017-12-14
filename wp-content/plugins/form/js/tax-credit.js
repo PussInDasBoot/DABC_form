@@ -19,15 +19,20 @@ document.addEventListener("DOMContentLoaded", function(e) {
 
     document.addEventListener('change', function(event) {
         if (event.target.type == "radio") {
-            showElementOnSelection(event.target.name, event.target.id)
+            showElementOnChange(event.target.name, event.target.id)
         }
     })
 
-    function showElementOnSelection(name, id) {
-        switch (name+id) {
-            case "speechRestrsevereRestr":
-                document.querySelector("#speechSevereRestrictionFreq").removeAttribute("hidden");
-                break;
-        }
+    function showElementOnChange(name, id) {
+        // TODO refactor with ES6 and destructuring
+        var speechSevereRestrictionFreq = document.querySelector("#speechSevereRestrictionFreq");
+        // Show speechSevereRestrictionFreq div only when there is a severe restriction
+        document.querySelector("input[name=speechRestr]:checked").value=="severeRestr" ? speechSevereRestrictionFreq.removeAttribute("hidden") : speechSevereRestrictionFreq.setAttribute("hidden", true);
+        console.log(speechSevereRestrictionFreq);
+        // switch (name+id) {
+        //     case "speechRestrsevereRestr":
+        //         document.querySelector("#speechSevereRestrictionFreq").removeAttribute("hidden");
+        //         break;
+        // }
     }
 }, false);
