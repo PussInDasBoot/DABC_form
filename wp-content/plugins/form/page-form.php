@@ -39,14 +39,97 @@ function custom_registration_function() {
     <p>Do you have any restrictions in the following health areas? Complete all sections that apply:</p>
 
 
-    <button class="accordion">Section 1</button>
+    <button class="accordion">Vision</button>
     <div class="panel">
-      <p>Lorem ipsum...</p>
+        <table>
+            <tr>
+                <td>
+                    Do you have medical conditions or diagnoses that restricts your vision? Please list all if more than one.
+                </td>
+                <td>
+                    <textarea id="visionMedicalCondition"></textarea>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    Please share what restrictions you experience even with corrective devices, medication or therapy.
+                </td>
+                <td>
+                    <div class="radio">
+                      <label>
+                        <input type="radio" name="visionRestr" id="legallyBlind" value="legallyBlind">
+                        I am legally blind, with a visual acuity of 20/200 or less with the Snellen Chart or field of vision in both eyes is 20 degrees or less.
+                      </label>
+                    </div>
+                    <div class="radio">
+                      <label>
+                        <input type="radio" name="visionRestr" id="severeRestr" value="severeRestr">
+                        I am not legally blind. I have less severe restr in my vision. 
+                        Explain: 
+                        <input type="text" id="visionSevereRestrExplain"></input>
+                      </label>
+                    </div>
+                </td>
+            </tr>
+        </table>
     </div>
 
-    <button class="accordion">Section 2</button>
-    <div class="panel">
-      <p>Lorem ipsum...</p>
+    <button class="accordion">Speaking</button>
+    <div class="panel" style="display: block;">
+      <table>
+            <tr>
+                <td>
+                    Do you have medical conditions or diagnoses that restricts your ability to speak? Please list all if more than one.
+                </td>
+                <td>
+                    <textarea id="speechMedicalCondition"></textarea>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    Please share what restrictions you experience even with corrective devices, medication or therapy.
+                </td>
+                <td>
+                    <div class="radio">
+                      <label>
+                        <input type="radio" name="speechRestr" id="unable" value="unable">
+                        I am unable to speak and rely on other means of communication, such as sign language or a symbol board, at least 90% of the time.
+                      </label>
+                    </div>
+                    <div class="radio">
+                      <label>
+                        <input type="radio" name="speechRestr" id="severeRestr" value="severeRestr">
+                        I take longer to speak so as to be understood by another person familiar with me, in a quiet setting. 
+                      </label>
+                    </div>
+                </td>
+            </tr>
+            <tr id="speechSevereRestrictionFreq" hidden>
+                <td>
+                    How often does this happen?
+                </td>
+                <td>
+                    <div class="radio">
+                      <label>
+                        <input type="radio" name="speechRestrFreq" id="rarely" value="rarely">
+                        Rarely
+                      </label>
+                    </div>
+                    <div class="radio">
+                      <label>
+                        <input type="radio" name="speechRestrFreq" id="some" value="some">
+                        Some of the time 
+                      </label>
+                    </div>
+                    <div class="radio">
+                      <label>
+                        <input type="radio" name="speechRestrFreq" id="very" value="very">
+                        At least 90% of the time
+                      </label>
+                    </div>
+                </td>
+            </tr>
+        </table>
     </div>
 
     <button class="accordion">Section 3</button>

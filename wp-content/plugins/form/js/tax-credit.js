@@ -16,4 +16,18 @@ document.addEventListener("DOMContentLoaded", function(e) {
             }
         }
     }
-});
+
+    document.addEventListener('change', function(event) {
+        if (event.target.type == "radio") {
+            showElementOnSelection(event.target.name, event.target.id)
+        }
+    })
+
+    function showElementOnSelection(name, id) {
+        switch (name+id) {
+            case "speechRestrsevereRestr":
+                document.querySelector("#speechSevereRestrictionFreq").removeAttribute("hidden");
+                break;
+        }
+    }
+}, false);
