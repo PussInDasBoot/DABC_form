@@ -27,41 +27,41 @@ function speaking_registration_function() {
                 </td>
                 <td>
                     <div class="radio">
-                      <label>
-                        <input type="radio" name="speechRestr" id="unable" value="unable">
-                        I am unable to speak and rely on other means of communication, such as sign language or a symbol board, at least 90% of the time.
-                      </label>
+                        <input type="radio" name="speechRestr" id="speechRestrUnable" value="unable">
+                        <label for="speechRestrUnable">
+                            I am unable to speak and rely on other means of communication, such as sign language or a symbol board, at least 90% of the time.
+                        </label>
                     </div>
                     <div class="radio">
-                      <label>
-                        <input type="radio" name="speechRestr" id="severeRestr" value="severeRestr">
-                        I take longer to speak so as to be understood by another person familiar with me, in a quiet setting. 
-                      </label>
+                        <input type="radio" name="speechRestr" id="speechRestrSevere" value="severeRestr">
+                        <label for="speechRestrSevere">
+                            I take longer to speak so as to be understood by another person familiar with me, in a quiet setting. 
+                        </label>
                     </div>
                 </td>
             </tr>
-            <tr id="speechSevereRestrictionFreq" hidden>
+            <tr id="speechSevereRestrFreq" hidden>
                 <td>
                     How often does this happen?
                 </td>
                 <td>
                     <div class="radio">
-                      <label>
-                        <input type="radio" name="speechRestrFreq" id="rarely" value="rarely">
-                        Rarely
-                      </label>
+                        <input type="radio" name="speechRestrFreq" id="speechRestrFreqRarely" value="rarely">
+                        <label for="speechRestrFreqRarely">
+                            Rarely
+                        </label>
                     </div>
                     <div class="radio">
-                      <label>
-                        <input type="radio" name="speechRestrFreq" id="some" value="some">
-                        Some of the time 
-                      </label>
+                        <input type="radio" name="speechRestrFreq" id="speechRestrFreqSome" value="some">
+                        <label for="speechRestrFreqSome">
+                            Some of the time 
+                        </label>
                     </div>
                     <div class="radio">
-                      <label>
-                        <input type="radio" name="speechRestrFreq" id="very" value="very">
-                        At least 90% of the time
-                      </label>
+                        <input type="radio" name="speechRestrFreq" id="speechRestrFreqVery" value="very">
+                        <label for="speechRestrFreqVery">
+                            At least 90% of the time
+                        </label>
                     </div>
                 </td>
             </tr>

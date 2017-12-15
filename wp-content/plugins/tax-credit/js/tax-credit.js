@@ -1,5 +1,6 @@
 document.addEventListener("DOMContentLoaded", function(e) {
     const accordions = document.getElementsByClassName("accordion");
+    console.log(document.querySelectorAll("#very"));
 
     for (const acc of accordions) {
         acc.onclick = function(){
@@ -24,21 +25,22 @@ document.addEventListener("DOMContentLoaded", function(e) {
     })
 
     function showElementOnChange(name, id) {
-        const speechSevereRestrictionFreq = document.querySelector("#speechSevereRestrictionFreq");
-        // Show speechSevereRestrictionFreq div only when there is a severe restriction
-        if (document.querySelector("input[name=speechRestr]:checked") && document.querySelector("input[name=speechRestr]:checked").value=="severeRestr") {
-            speechSevereRestrictionFreq.removeAttribute("hidden");
+        // Show speechSevereRestrFreq tr only when there is a severe restriction
+        const speechSevereRestFreq = document.querySelector("#speechSevereRestrFreq");
+        const speechSevereRest = document.querySelector("input[name=speechRestr]:checked");
+        if (speechSevereRest && speechSevereRest.value=="severeRestr") {
+            speechSevereRestrFreq.removeAttribute("hidden");
         } else { 
-            speechSevereRestrictionFreq.setAttribute("hidden", true);
+            speechSevereRestrFreq.setAttribute("hidden", true);
             for (const s of document.getElementsByName("speechRestrFreq")) {
-                // clear speechSevereRestrictionFreq selection when there is not a severe restriction
+                // clear speechSevereRestrFreq selection when there is not a severe restriction
                 s.checked = false;
             }
 
         }
         // switch (name+id) {
         //     case "speechRestrsevereRestr":
-        //         document.querySelector("#speechSevereRestrictionFreq").removeAttribute("hidden");
+        //         document.querySelector("#speechSevereRestrFreq").removeAttribute("hidden");
         //         break;
         // }
     }

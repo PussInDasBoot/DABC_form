@@ -43,18 +43,64 @@ function vision_registration_function() {
                 </td>
                 <td>
                     <div class="radio">
-                      <label>
-                        <input type="radio" name="visionRestr" id="legallyBlind" value="legallyBlind">
-                        I am legally blind, with a visual acuity of 20/200 or less with the Snellen Chart or field of vision in both eyes is 20 degrees or less.
-                      </label>
+                        <input type="radio" name="visionRestr" id="visionRestrBlind" value="legallyBlind">
+                        <label for="visionRestrBlind">
+                            I am legally blind, with a visual acuity of 20/200 or less with the Snellen Chart or field of vision in both eyes is 20 degrees or less.
+                        </label>
                     </div>
                     <div class="radio">
-                      <label>
-                        <input type="radio" name="visionRestr" id="severeRestr" value="severeRestr">
-                        I am not legally blind. I have less severe restrictions in my vision. 
-                        Explain: 
-                        <input type="text" id="visionSevereRestrExplain"></input>
-                      </label>
+                        <input type="radio" name="visionRestr" id="visionRestrSevere" value="severeRestr">
+                        <label for="visionRestrSevere">
+                            I am not legally blind. I have less severe restrictions in my vision. 
+                            Explain: 
+                            <input type="text" id="visionSevereRestrExplain"></input>
+                        </label>
+                    </div>
+                </td>
+            </tr>
+            <tr id="visionSevereRestrictionFreq">
+                <td>
+                    How often does this happen?
+                </td>
+                <td>
+                    <div class="radio">
+                        <input type="radio" name="visionRestrFreq" id="visionRestrFreqRarely" value="rarely">
+                        <label for="visionRestrFreqRarely">
+                            Rarely
+                        </label>
+                    </div>
+                    <div class="radio">
+                        <input type="radio" name="visionRestrFreq" id="visionRestrFreqSome" value="some">
+                        <label for="visionRestrFreqSome">
+                            Some of the time 
+                        </label>
+                    </div>
+                    <div class="radio">
+                        <input type="radio" name="visionRestrFreq" id="visionRestrFreqVery" value="very">
+                        <label for="visionRestrFreqVery">
+                            At least 90% of the time
+                        </label>
+                    </div>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    Do you use any appropriate therapy, medication or devices? If yes, please describe.
+                </td>
+                <td>
+                    <div class="radio">
+                        <input type="radio" name="visionTherapy" id="visionTherapyNo" value="no">
+                        <label for="visionTherapyNo">
+                            No 
+                        </label>
+                    </div>
+                    <div class="radio">
+                        <input type="radio" name="visionTherapy" id="visionTherapyYes" value="yes">
+                        <label for="visionTherapyYes">
+                            Yes
+                        </label>
+                      Explain: 
+                        <input type="text" id="visionTherapyExplain"></input>
                     </div>
                 </td>
             </tr>

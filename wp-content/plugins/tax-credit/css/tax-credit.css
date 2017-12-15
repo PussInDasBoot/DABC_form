@@ -31,11 +31,12 @@ td {
 tr {
     vertical-align: top;
     padding: 10px;
+    border-bottom: 1px #023a4b solid;
 }
-
+/*
 tr:nth-child(even) {
     background-color: #eee;
-}
+}*/
 
 textarea {
     min-height: 74px;
