@@ -71,6 +71,36 @@ function custom_registration_function() {
                     </div>
                 </td>
             </tr>
+            <tr>
+                <td>
+                    What year did your restriction with vision begin?
+                </td>
+                <td>
+                    <select name="visionBegin">
+                    '; 
+                    
+                        for ($i = date('Y') ; $i > 1950; $i--) {
+                            echo "<option>$i</option>";
+                        };
+                    
+                    echo '</select>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    Was your vision restriction resolved? If yes please indicate what year.
+                </td>
+                <td>
+                    <select name="visionResolve">
+                    '; 
+                    
+                        for ($i = date('Y') ; $i > 1950; $i--) {
+                            echo "<option>$i</option>";
+                        };
+                    
+                    echo '</select>
+                </td>
+            </tr>
         </table>
     </div>
 
