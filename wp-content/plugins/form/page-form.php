@@ -6,7 +6,7 @@ add_action('init', 'register_my_script');
 add_action('wp_footer', 'print_my_script');
 
 function register_my_script() {
-    wp_register_script('tax-credit', plugins_url('/js/tax-credit.js', __FILE__ ));
+    wp_register_script('tax-credit', plugins_url('/js/tax-credit.min.js', __FILE__ ));
 }
 
 function print_my_script() {
@@ -18,7 +18,7 @@ function print_my_script() {
     wp_print_scripts('tax-credit');
 }
 
-wp_register_script('tax-credit', plugins_url('/js/tax-credit.js', __FILE__ ));
+wp_register_script('tax-credit', plugins_url('/js/tax-credit.min.js', __FILE__ ));
 wp_enqueue_script('tax-credit');
 
 wp_register_style('tax-credit', plugins_url('/css/tax-credit.css', __FILE__), array(), '1', 'all');
