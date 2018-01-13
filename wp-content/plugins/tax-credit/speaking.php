@@ -137,8 +137,10 @@ function speaking_registration_function() {
                         <label for="speechTherapyYes">
                             Yes
                         </label>
+                    </div>
+                    <div id="speechTherapyExplain" hidden>
                       Explain: 
-                        <input type="text" id="speechTherapyExplain"></input>
+                        <input type="text" id="speechTherapyExplainInput"></input>
                     </div>
                 </td>
             </tr>
@@ -159,9 +161,23 @@ function speaking_registration_function() {
             </tr>
             <tr>
                 <td>
-                    Was your speech restriction resolved? If yes please indicate what year.
+                    Was your speech restriction resolved?
                 </td>
                 <td>
+                    <div class="radio">
+                        <input type="radio" name="speechResolve" id="speechResolveNo" value="no">
+                        <label for="speechResolveNo">
+                            No 
+                        </label>
+                    </div>
+                    <div class="radio">
+                        <input type="radio" name="speechResolve" id="speechResolveYes" value="yes">
+                        <label for="speechResolveYes">
+                            Yes
+                        </label>
+                    </div>
+                    <div id="speechResolveYear" hidden>
+                        In which year was it resolved?
                     <select name="speechResolve">
                     '; 
                     

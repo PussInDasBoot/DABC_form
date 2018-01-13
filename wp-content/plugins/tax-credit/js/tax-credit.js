@@ -46,5 +46,7 @@ const triggerList = {
     visionRestrExplain: ["visionRestr", "severeRestr"],
     visionSevereRestrictionFreq: ["visionRestr", "severeRestr"],
     visionTherapyExplain: ["visionTherapy", "yes"],
-    visionResolveYear: ["visionResolve", "yes"]
+    visionResolveYear: ["visionResolve", "yes"],
+    speechTherapyExplain: ["speechTherapy", "yes"],
+    speechResolveYear: ["speechResolve", "yes"]
 }
