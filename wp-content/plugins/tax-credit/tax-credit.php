@@ -52,13 +52,15 @@ function vision_registration_function() {
                         <input type="radio" name="visionRestr" id="visionRestrSevere" value="severeRestr">
                         <label for="visionRestrSevere">
                             I am not legally blind. I have less severe restrictions in my vision. 
-                            Explain: 
-                            <input type="text" id="visionSevereRestrExplain"></input>
                         </label>
+                    </div>
+                    <div id="visionRestrExplain" hidden>
+                        Explain:
+                        <input type="text" id="visionRestrExplainInput"></input>
                     </div>
                 </td>
             </tr>
-            <tr id="visionSevereRestrictionFreq">
+            <tr id="visionSevereRestrictionFreq" hidden>
                 <td>
                     How often does this happen?
                 </td>
@@ -85,7 +87,7 @@ function vision_registration_function() {
             </tr>
             <tr>
                 <td>
-                    Do you use any appropriate therapy, medication or devices? If yes, please describe.
+                    Do you use any appropriate therapy, medication or devices?
                 </td>
                 <td>
                     <div class="radio">
@@ -99,8 +101,10 @@ function vision_registration_function() {
                         <label for="visionTherapyYes">
                             Yes
                         </label>
-                      Explain: 
-                        <input type="text" id="visionTherapyExplain"></input>
+                    </div>
+                    <div id="visionTherapyExplain" hidden>
+                        Explain:
+                        <input type="text" id="visionTherapyExplainInput"></input>
                     </div>
                 </td>
             </tr>
@@ -121,17 +125,32 @@ function vision_registration_function() {
             </tr>
             <tr>
                 <td>
-                    Was your vision restriction resolved? If yes please indicate what year.
+                    Was your vision restriction resolved?
                 </td>
                 <td>
-                    <select name="visionResolve">
-                    '; 
-                    
-                        for ($i = date('Y') ; $i > 1950; $i--) {
-                            echo "<option>$i</option>";
-                        };
-                    
-                    echo '</select>
+                    <div class="radio">
+                        <input type="radio" name="visionResolve" id="visionResolveNo" value="no">
+                        <label for="visionResolveNo">
+                            No 
+                        </label>
+                    </div>
+                    <div class="radio">
+                        <input type="radio" name="visionResolve" id="visionResolveYes" value="yes">
+                        <label for="visionResolveYes">
+                            Yes
+                        </label>
+                    </div>
+                    <div id="visionResolveYear" hidden>
+                        In which year was it resolved?
+                        <select name="visionResolveYear">
+                        '; 
+                        
+                            for ($i = date('Y') ; $i > 1950; $i--) {
+                                echo "<option>$i</option>";
+                            };
+                        
+                        echo '</select>
+                    <div>
                 </td>
             </tr>
         </table>

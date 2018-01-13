@@ -42,5 +42,9 @@ document.addEventListener("DOMContentLoaded", function(e) {
 
 // key is id of target element, value is array of trigger elements [name, value]
 const triggerList = {
-    speechSevereRestrFreq: ["speechRestr", "severeRestr"]
+    speechSevereRestrFreq: ["speechRestr", "severeRestr"],
+    visionRestrExplain: ["visionRestr", "severeRestr"],
+    visionSevereRestrictionFreq: ["visionRestr", "severeRestr"],
+    visionTherapyExplain: ["visionTherapy", "yes"],
+    visionResolveYear: ["visionResolve", "yes"]
 }
