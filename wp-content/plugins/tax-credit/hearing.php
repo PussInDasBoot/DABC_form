@@ -13,6 +13,7 @@ function hearing_registration_function() {
     <div class="panel">
         <table>
             <tr>
+            <button id="submit">Submit</button>
             </tr>
         </table>
     </div>

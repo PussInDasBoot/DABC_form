@@ -15,7 +15,7 @@ function speaking_registration_function() {
       <table>
             <tr>
                 <td>
-                    Do you have medical conditions or diagnoses that restricts your ability to speak? Please list all if more than one.
+                    Do you have medical conditions or diagnoses that restricts your ability to speak most of the time? Please list all if more than one.
                 </td>
                 <td>
                     <textarea id="speechMedicalCondition"></textarea>
@@ -123,30 +123,106 @@ function speaking_registration_function() {
             </tr>
             <tr>
                 <td>
-                    Do you use any appropriate therapy, medication or devices? If yes, please describe.
+                    Do you use any appropriate therapy, medication or devices to assist you?
                 </td>
                 <td>
                     <div class="radio">
                         <input type="radio" name="speechTherapy" id="speechTherapyNo" value="no">
                         <label for="speechTherapyNo">
                             No 
-                        </label>
+                        </label>    
                     </div>
                     <div class="radio">
-                        <input type="radio" name="speechTherapy" id="speechTherapyYes" value="yes">
-                        <label for="speechTherapyYes">
-                            Yes
-                        </label>
+                        <input type="radio" name="speechTherapy" id="speechTherapyTherapy" value="therapy">
+                        <label for="speechTherapyTherapy">
+                            I receive therapy (physio, etc)
+                        </label>    
                     </div>
-                    <div id="speechTherapyExplain" hidden>
-                      Explain: 
-                        <input type="text" id="speechTherapyExplainInput"></input>
+                    <div class="radio">
+                        <input type="radio" name="speechTherapy" id="speechTherapyMedication" value="medication">
+                        <label for="speechTherapyMedication">
+                            I take medication
+                        </label>    
+                    </div>
+                    <div class="radio">
+                        <input type="radio" name="speechTherapy" id="speechTherapyDevices" value="devices">
+                        <label for="speechTherapyDevices">
+                            I use devices
+                        </label>    
                     </div>
                 </td>
             </tr>
             <tr>
                 <td>
-                    What year did your restriction with speech begin?
+                    Please indicate the devices you use
+                </td>
+                <td>
+                    <div class="radio">
+                        <input type="radio" name="speechDevices" id="speechDevicesAdaptive" value="adaptive">
+                        <label for="speechDevicesAdaptive">
+                            Adaptive equipment 
+                        </label>    
+                    </div>
+                    <div class="radio">
+                        <input type="radio" name="speechDevices" id="speechDevicesOther" value="other">
+                        <label for="speechDevicesOther">
+                            Other:
+                        </label>
+                        <input type="text" id="speechDevicesOtherInput"></input>     
+                    </div>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    Please indicate the therapy you receive
+                </td>
+                <td>
+                    <div class="radio">
+                        <input type="radio" name="speechTherapy" id="speechTherapyPhysio" value="physio">
+                        <label for="speechTherapyPhysio">
+                            Physiotherapy
+                        </label>    
+                    </div>
+                    <div class="radio">
+                        <input type="radio" name="speechTherapy" id="speechTherapyChiro" value="chiro">
+                        <label for="speechTherapyChiro">
+                            Chiropractic
+                        </label>    
+                    </div>
+                    <div class="radio">
+                        <input type="radio" name="speechTherapy" id="speechTherapyMassage" value="massage">
+                        <label for="speechTherapyMassage">
+                            Massage
+                        </label>    
+                    </div>
+                    <div class="radio">
+                        <input type="radio" name="speechTherapy" id="speechTherapyOcc" value="occ">
+                        <label for="speechTherapyOcc">
+                            Occupational Therapy
+                        </label>    
+                    </div>
+                    <div class="radio">
+                        <input type="radio" name="speechTherapy" id="speechTherapyOther" value="other">
+                        <label for="speechTherapyOther">
+                            Other:
+                        </label>
+                        <input type="text" id="speechTherapyOtherInput"></input>     
+                    </div>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    Please indicate what medication you take to address your restriction.
+                </td>
+                <td>
+                    <div id="speechMedication">
+                        <input type="text" id="speechMedicationInput"></input>  
+                    </div>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    What year did your restriction begin?
                 </td>
                 <td>
                     <select name="speechBegin">
@@ -161,7 +237,7 @@ function speaking_registration_function() {
             </tr>
             <tr>
                 <td>
-                    Was your speech restriction resolved?
+                    Has your restriction resolved? If yes please indicate what year.
                 </td>
                 <td>
                     <div class="radio">
@@ -178,7 +254,7 @@ function speaking_registration_function() {
                     </div>
                     <div id="speechResolveYear" hidden>
                         In which year was it resolved?
-                    <select name="speechResolve">
+                    <select name="speechResolveYear">
                     '; 
                     
                         for ($i = date('Y') ; $i > 1950; $i--) {

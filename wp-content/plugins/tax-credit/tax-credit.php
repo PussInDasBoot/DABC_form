@@ -31,7 +31,7 @@ function vision_registration_function() {
         <table>
             <tr>
                 <td>
-                    Do you have medical conditions or diagnoses that restricts your vision? Please list all if more than one.
+                    Do you have medical conditions or diagnoses that restricts your vision most of the time? Please list all if more than one.
                 </td>
                 <td>
                     <textarea id="visionMedicalCondition"></textarea>
