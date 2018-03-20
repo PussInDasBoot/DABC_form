@@ -19,7 +19,16 @@ document.addEventListener("DOMContentLoaded", function(e) {
 
     document.addEventListener('change', function(event) {
         if (event.target.type == "radio") {
-            showAndHideTargets()
+            showAndHideRadioTargets();
+        }
+        if (event.target.type == "checkbox") {
+            const id = event.target.id;
+            if (event.target.checked) {
+                document.querySelector(`#${checkboxTriggers[id]}`).removeAttribute("hidden");
+                const value = [`${event.target.name}`, `${event.target.value}`];
+            } else {
+                document.querySelector(`#${checkboxTriggers[id]}`).setAttribute("hidden", true);
+            }
         }
     })
 
@@ -31,13 +40,13 @@ document.addEventListener("DOMContentLoaded", function(e) {
         console.log(`Vision: ${visionMedicalCondition}${visionRestr} `);
     }
 
-    function showAndHideTargets() {
-        for (const [target, trigger] of Object.entries(triggerList)) {
+    function showAndHideRadioTargets() {
+        for (const [target, trigger] of Object.entries(radioTriggers)) {
             const targetEl = document.querySelector(`#${target}`);
             const triggerEl = document.querySelector(`input[name=${trigger[0]}]:checked`);
             if (triggerEl && triggerEl.value==`${trigger[1]}`) {
                 targetEl.removeAttribute("hidden");
-            } else { 
+            } else {
                 targetEl.setAttribute("hidden", true);
                 for (const s of targetEl.querySelectorAll('input')) {
                     // clear target selection when trigger not selected
@@ -49,11 +58,19 @@ document.addEventListener("DOMContentLoaded", function(e) {
 }, false);
 
 // key is id of target element, value is array of trigger elements [name, value]
-const triggerList = {
+const radioTriggers = {
     visionRestrExplain: ["visionRestr", "severeRestr"],
     visionSevereRestrictionFreq: ["visionRestr", "severeRestr"],
     visionTherapyExplain: ["visionTherapy", "yes"],
     visionResolveYear: ["visionResolve", "yes"],
     speechSevereRestrFreq: ["speechRestr", "severeRestr"],
+    speechTherapyAssist: ["speechTherapyYesNo", "yes"],
     speechResolveYear: ["speechResolve", "yes"]
+}
+
+// key is id of target element, value is id of trigger element
+const checkboxTriggers = {
+    speechTherapyDevices: "speechDevices",
+    speechTherapyTherapy: "speechTherapy",
+    speechTherapyMedication: "speechMedication"
 }

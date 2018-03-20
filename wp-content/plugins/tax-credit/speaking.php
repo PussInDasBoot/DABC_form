@@ -101,20 +101,20 @@ function speaking_registration_function() {
                     What happens when you speak?
                 </td>
                 <td>
-                    <div class="radio">
-                        <input type="radio" name="speechWhatHappens" id="speechWhatHappensVol" value="vol">
+                    <div>
+                        <input type="checkbox" name="speechWhatHappens" id="speechWhatHappensVol" value="vol">
                         <label for="speechWhatHappensVol">
                             Low-volume
                         </label>
                     </div>
-                    <div class="radio">
-                        <input type="radio" name="speechWhatHappens" id="speechWhatHappensSlur" value="slur">
+                    <div>
+                        <input type="checkbox" name="speechWhatHappens" id="speechWhatHappensSlur" value="slur">
                         <label for="speechWhatHappensSlur">
                             Slurring
                         </label>
                     </div>
-                    <div class="radio">
-                        <input type="radio" name="speechWhatHappens" id="speechWhatHappensStut" value="stut">
+                    <div>
+                        <input type="checkbox" name="speechWhatHappens" id="speechWhatHappensStut" value="stut">
                         <label for="speechWhatHappensStut">
                             Stuttering
                         </label>
@@ -127,32 +127,41 @@ function speaking_registration_function() {
                 </td>
                 <td>
                     <div class="radio">
-                        <input type="radio" name="speechTherapy" id="speechTherapyNo" value="no">
+                        <input type="radio" name="speechTherapyYesNo" id="speechTherapyNo" value="no">
                         <label for="speechTherapyNo">
                             No 
                         </label>    
                     </div>
                     <div class="radio">
-                        <input type="radio" name="speechTherapy" id="speechTherapyTherapy" value="therapy">
-                        <label for="speechTherapyTherapy">
-                            I receive therapy (physio, etc)
+                        <input type="radio" name="speechTherapyYesNo" id="speechTherapyYes" value="yes">
+                        <label for="speechTherapyYes">
+                            Yes 
                         </label>    
                     </div>
-                    <div class="radio">
-                        <input type="radio" name="speechTherapy" id="speechTherapyMedication" value="medication">
-                        <label for="speechTherapyMedication">
-                            I take medication
-                        </label>    
+                    <div id="speechTherapyAssist" hidden>
+                        <div>
+                            <input type="checkbox" name="speechTherapy" id="speechTherapyDevices" value="devices">
+                            <label for="speechTherapyDevices">
+                                I use devices
+                            </label>    
+                        </div>
+                        <div>
+                            <input type="checkbox" name="speechTherapy" id="speechTherapyTherapy" value="therapy">
+                            <label for="speechTherapyTherapy">
+                                I receive therapy (physio, etc)
+                            </label>    
+                        </div>
+                        <div>
+                            <input type="checkbox" name="speechTherapy" id="speechTherapyMedication" value="medication">
+                            <label for="speechTherapyMedication">
+                                I take medication
+                            </label>    
+                        </div>
                     </div>
-                    <div class="radio">
-                        <input type="radio" name="speechTherapy" id="speechTherapyDevices" value="devices">
-                        <label for="speechTherapyDevices">
-                            I use devices
-                        </label>    
-                    </div>
+                    
                 </td>
             </tr>
-            <tr>
+            <tr id="speechDevices" hidden>
                 <td>
                     Please indicate the devices you use
                 </td>
@@ -172,7 +181,7 @@ function speaking_registration_function() {
                     </div>
                 </td>
             </tr>
-            <tr>
+            <tr id="speechTherapy" hidden>
                 <td>
                     Please indicate the therapy you receive
                 </td>
@@ -210,7 +219,7 @@ function speaking_registration_function() {
                     </div>
                 </td>
             </tr>
-            <tr>
+            <tr id="speechMedication" hidden>
                 <td>
                     Please indicate what medication you take to address your restriction.
                 </td>
