@@ -71,6 +71,10 @@ const radioTriggers = {
     hearingResolveYear: ["hearingResolve", "yes"],
     elimTherapyAssist: ["elimTherapyYesNo", "yes"],
     elimResolveYear: ["elimResolve", "yes"],
+    walkingRestr: ["walkingAble", "able"],
+    walkingAbleDescribe: ["walkingAble", "able"],
+    walkingTherapyAssist: ["walkingTherapyYesNo", "yes"],
+    walkingResolveYear: ["walkingResolve", "yes"],
 }
 
 // key is id of target element, value is id of trigger element
@@ -83,5 +87,8 @@ const checkboxTriggers = {
     hearingTherapyMedication: "hearingMedication",
     elimTherapyDevices: "elimDevices",
     elimTherapyTherapy: "elimTherapy",
-    elimTherapyMedication: "elimMedication"
+    elimTherapyMedication: "elimMedication",
+    walkingTherapyDevices: "walkingDevices",
+    walkingTherapyTherapy: "walkingTherapy",
+    walkingTherapyMedication: "walkingMedication"
 }

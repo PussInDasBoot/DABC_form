@@ -158,7 +158,6 @@ function speaking_registration_function() {
                             </label>    
                         </div>
                     </div>
-                    
                 </td>
             </tr>
             <tr id="speechDevices" hidden>
