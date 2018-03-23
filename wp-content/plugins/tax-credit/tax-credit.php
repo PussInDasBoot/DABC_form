@@ -15,6 +15,13 @@ function vision_registration_function() {
 
  
     echo '
+    <div class="panel" hidden>
+        <table>
+            <tr>
+            <button id="submit">Submit</button>
+            </tr>
+        </table>
+    </div>
     <p>This tool will create documents that will help you and your health care provider complete the application for the Disability Tax Credit, commonly referred to as the DTC.</p>
 
     <p>There are a couple different ways you can qualify for the DTC:</p>
@@ -31,7 +38,7 @@ function vision_registration_function() {
         <table>
             <tr>
                 <td>
-                    Do you have medical conditions or diagnoses that restricts your vision most of the time? Please list all if more than one.
+                    Do you have medical conditions or diagnoses that restrict your vision most of the time? Please list all if more than one.
                 </td>
                 <td>
                     <textarea id="visionMedicalCondition"></textarea>
@@ -125,7 +132,7 @@ function vision_registration_function() {
             </tr>
             <tr>
                 <td>
-                    Was your vision restriction resolved?
+                    Has your vision restriction resolved?
                 </td>
                 <td>
                     <div class="radio">

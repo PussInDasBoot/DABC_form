@@ -65,7 +65,8 @@ const radioTriggers = {
     visionResolveYear: ["visionResolve", "yes"],
     speechSevereRestrFreq: ["speechRestr", "severeRestr"],
     speechTherapyAssist: ["speechTherapyYesNo", "yes"],
-    speechResolveYear: ["speechResolve", "yes"]
+    speechResolveYear: ["speechResolve", "yes"],
+    hearingSevereRestrFreq: ["hearingRestr", "severeRestr"]
 }
 
 // key is id of target element, value is id of trigger element

@@ -15,7 +15,7 @@ function speaking_registration_function() {
       <table>
             <tr>
                 <td>
-                    Do you have medical conditions or diagnoses that restricts your ability to speak most of the time? Please list all if more than one.
+                    Do you have medical conditions or diagnoses that restrict your ability to speak most of the time? Please list all if more than one.
                 </td>
                 <td>
                     <textarea id="speechMedicalCondition"></textarea>
@@ -71,26 +71,26 @@ function speaking_registration_function() {
                 </td>
                 <td>
                     <div class="radio">
-                        <input type="radio" name="speechDrComm" id="speechDrCommThree" value="three">
-                        <label for="speechDrCommThree">
+                        <input type="radio" name="speechLonger" id="speechLongerThree" value="three">
+                        <label for="speechLongerThree">
                             At least three times as long, compared to an average person my age without my restrictions.
                         </label>
                     </div>
                     <div class="radio">
-                        <input type="radio" name="speechDrComm" id="speechDrCommTwo" value="two">
-                        <label for="speechDrCommTwo">
+                        <input type="radio" name="speechLonger" id="speechLongerTwo" value="two">
+                        <label for="speechLongerTwo">
                             At least two times as long, compared to an average person my age without my restrictions.
                         </label>
                     </div>
                     <div class="radio">
-                        <input type="radio" name="speechDrComm" id="speechDrCommLittle" value="little">
-                        <label for="speechDrCommLittle">
+                        <input type="radio" name="speechLonger" id="speechLongerLittle" value="little">
+                        <label for="speechLongerLittle">
                             A little bit longer, compared to an average person my age without my restrictions.
                         </label>
                     </div>
                     <div class="radio">
-                        <input type="radio" name="speechDrComm" id="speechDrCommSame" value="same">
-                        <label for="speechDrCommSame">
+                        <input type="radio" name="speechLonger" id="speechLongerSame" value="same">
+                        <label for="speechLongerSame">
                             The same amount of time, compared to an average person my age without my restrictions.
                         </label>
                     </div>
@@ -102,20 +102,20 @@ function speaking_registration_function() {
                 </td>
                 <td>
                     <div>
-                        <input type="checkbox" name="speechWhatHappens" id="speechWhatHappensVol" value="vol">
-                        <label for="speechWhatHappensVol">
+                        <input type="checkbox" name="speechDescribe" id="speechDescribeVol" value="vol">
+                        <label for="speechDescribeVol">
                             Low-volume
                         </label>
                     </div>
                     <div>
-                        <input type="checkbox" name="speechWhatHappens" id="speechWhatHappensSlur" value="slur">
-                        <label for="speechWhatHappensSlur">
+                        <input type="checkbox" name="speechDescribe" id="speechDescribeSlur" value="slur">
+                        <label for="speechDescribeSlur">
                             Slurring
                         </label>
                     </div>
                     <div>
-                        <input type="checkbox" name="speechWhatHappens" id="speechWhatHappensStut" value="stut">
-                        <label for="speechWhatHappensStut">
+                        <input type="checkbox" name="speechDescribe" id="speechDescribeStut" value="stut">
+                        <label for="speechDescribeStut">
                             Stuttering
                         </label>
                     </div>
@@ -163,17 +163,17 @@ function speaking_registration_function() {
             </tr>
             <tr id="speechDevices" hidden>
                 <td>
-                    Please indicate the devices you use
+                    Please indicate the devices you use.
                 </td>
                 <td>
-                    <div class="radio">
-                        <input type="radio" name="speechDevices" id="speechDevicesAdaptive" value="adaptive">
+                    <div>
+                        <input type="checkbox" name="speechDevices" id="speechDevicesAdaptive" value="adaptive">
                         <label for="speechDevicesAdaptive">
                             Adaptive equipment 
                         </label>    
                     </div>
-                    <div class="radio">
-                        <input type="radio" name="speechDevices" id="speechDevicesOther" value="other">
+                    <div>
+                        <input type="checkbox" name="speechDevices" id="speechDevicesOther" value="other">
                         <label for="speechDevicesOther">
                             Other:
                         </label>
@@ -183,35 +183,35 @@ function speaking_registration_function() {
             </tr>
             <tr id="speechTherapy" hidden>
                 <td>
-                    Please indicate the therapy you receive
+                    Please indicate the therapy you receive.
                 </td>
                 <td>
-                    <div class="radio">
-                        <input type="radio" name="speechTherapy" id="speechTherapyPhysio" value="physio">
+                    <div>
+                        <input type="checkbox" name="speechTherapy" id="speechTherapyPhysio" value="physio">
                         <label for="speechTherapyPhysio">
                             Physiotherapy
                         </label>    
                     </div>
-                    <div class="radio">
-                        <input type="radio" name="speechTherapy" id="speechTherapyChiro" value="chiro">
+                    <div>
+                        <input type="checkbox" name="speechTherapy" id="speechTherapyChiro" value="chiro">
                         <label for="speechTherapyChiro">
                             Chiropractic
                         </label>    
                     </div>
-                    <div class="radio">
-                        <input type="radio" name="speechTherapy" id="speechTherapyMassage" value="massage">
+                    <div>
+                        <input type="checkbox" name="speechTherapy" id="speechTherapyMassage" value="massage">
                         <label for="speechTherapyMassage">
                             Massage
                         </label>    
                     </div>
-                    <div class="radio">
-                        <input type="radio" name="speechTherapy" id="speechTherapyOcc" value="occ">
+                    <div>
+                        <input type="checkbox" name="speechTherapy" id="speechTherapyOcc" value="occ">
                         <label for="speechTherapyOcc">
                             Occupational Therapy
                         </label>    
                     </div>
-                    <div class="radio">
-                        <input type="radio" name="speechTherapy" id="speechTherapyOther" value="other">
+                    <div>
+                        <input type="checkbox" name="speechTherapy" id="speechTherapyOther" value="other">
                         <label for="speechTherapyOther">
                             Other:
                         </label>
@@ -246,7 +246,7 @@ function speaking_registration_function() {
             </tr>
             <tr>
                 <td>
-                    Has your restriction resolved? If yes please indicate what year.
+                    Has your restriction resolved?
                 </td>
                 <td>
                     <div class="radio">
