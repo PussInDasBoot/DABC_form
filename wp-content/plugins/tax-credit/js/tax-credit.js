@@ -66,12 +66,22 @@ const radioTriggers = {
     speechSevereRestrFreq: ["speechRestr", "severeRestr"],
     speechTherapyAssist: ["speechTherapyYesNo", "yes"],
     speechResolveYear: ["speechResolve", "yes"],
-    hearingSevereRestrFreq: ["hearingRestr", "severeRestr"]
+    hearingSevereRestrFreq: ["hearingRestr", "severeRestr"],
+    hearingTherapyAssist: ["hearingTherapyYesNo", "yes"],
+    hearingResolveYear: ["hearingResolve", "yes"],
+    elimTherapyAssist: ["elimTherapyYesNo", "yes"],
+    elimResolveYear: ["elimResolve", "yes"],
 }
 
 // key is id of target element, value is id of trigger element
 const checkboxTriggers = {
     speechTherapyDevices: "speechDevices",
     speechTherapyTherapy: "speechTherapy",
-    speechTherapyMedication: "speechMedication"
+    speechTherapyMedication: "speechMedication",
+    hearingTherapyDevices: "hearingDevices",
+    hearingTherapyTherapy: "hearingTherapy",
+    hearingTherapyMedication: "hearingMedication",
+    elimTherapyDevices: "elimDevices",
+    elimTherapyTherapy: "elimTherapy",
+    elimTherapyMedication: "elimMedication"
 }
