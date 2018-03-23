@@ -336,6 +336,7 @@ function walking_registration_function() {
                         </div>
                     </td>
                 </tr>
+            </tbody>
                 <tr>
                     <td>
                         What year did your restriction begin?
@@ -380,7 +381,6 @@ function walking_registration_function() {
                         echo '</select>
                     </td>
                 </tr>
-            </tbody>
         </table>
     </div>
     ';
