@@ -22,6 +22,7 @@ document.addEventListener("DOMContentLoaded", function(e) {
             showAndHideRadioTargets();
         }
         if (event.target.type == "checkbox") {
+            // on de-select of check box, can hide
             const id = event.target.id;
             if (event.target.checked) {
                 document.querySelector(`#${checkboxTriggers[id]}`).removeAttribute("hidden");
@@ -40,6 +41,9 @@ document.addEventListener("DOMContentLoaded", function(e) {
         console.log(`Vision: ${visionMedicalCondition}${visionRestr} `);
     }
 
+    /*
+    radio triggers need to check each radio in the group to hide pop ups when the trigger is no longer selected as there is no non-select event for radio buttons to listen for (the event is instead another radio in group being selected rather than the trigger being de-selected)
+    */
     function showAndHideRadioTargets() {
         for (const [target, trigger] of Object.entries(radioTriggers)) {
             const targetEl = document.querySelector(`#${target}`);
@@ -56,6 +60,7 @@ document.addEventListener("DOMContentLoaded", function(e) {
         }
     }
 }, false);
+
 
 // key is id of target element, value is array of trigger elements [name, value]
 const radioTriggers = {
@@ -75,9 +80,14 @@ const radioTriggers = {
     walkingAbleDescribe: ["walkingAble", "able"],
     walkingTherapyAssist: ["walkingTherapyYesNo", "yes"],
     walkingResolveYear: ["walkingResolve", "yes"],
+    eating: ["feedingRestr", "severeRestrEat"],
+    eatingTherapyAssist: ["eatingTherapyYesNo", "yes"],
+    preparing: ["feedingRestr", "severeRestrPrepare"],
+    preparingTherapyAssist: ["preparingTherapyYesNo", "yes"],
 }
 
-// key is id of target element, value is id of trigger element
+
+//key is id of target element, value is id of trigger element
 const checkboxTriggers = {
     speechTherapyDevices: "speechDevices",
     speechTherapyTherapy: "speechTherapy",
@@ -90,5 +100,11 @@ const checkboxTriggers = {
     elimTherapyMedication: "elimMedication",
     walkingTherapyDevices: "walkingDevices",
     walkingTherapyTherapy: "walkingTherapy",
-    walkingTherapyMedication: "walkingMedication"
+    walkingTherapyMedication: "walkingMedication",
+    eatingTherapyDevices: "eatingDevices",
+    eatingTherapyTherapy: "eatingTherapy",
+    eatingTherapyMedication: "eatingMedication",
+    preparingTherapyDevices: "preparingDevices",
+    preparingTherapyTherapy: "preparingTherapy",
+    preparingTherapyMedication: "preparingMedication",
 }

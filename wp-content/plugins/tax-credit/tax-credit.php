@@ -6,6 +6,7 @@ require_once dirname( __FILE__ ) .'/hearing.php';
 require_once dirname( __FILE__ ) .'/speaking.php';
 require_once dirname( __FILE__ ) .'/eliminating.php';
 require_once dirname( __FILE__ ) .'/walking.php';
+require_once dirname( __FILE__ ) .'/feeding.php';
 
 wp_register_script('tax-credit', plugins_url('/js/tax-credit.min.js', __FILE__ ));
 wp_enqueue_script('tax-credit');
