@@ -53,6 +53,7 @@ function feeding_registration_function() {
                 </td>
             </tr>
             <tbody id="eating" hidden>
+                <th>Eating</th>
                 <tr>
                     <td>
                         How are you restricted in  eating, with the use of any appropriate therapy, medication or devices?
@@ -287,6 +288,7 @@ function feeding_registration_function() {
                 </tr>
             </tbody>
             <tbody id="preparing" hidden>
+                <th>Preparing Food</th>
                 <tr>
                     <td>
                         How are you restricted in preparing food, with the use of any appropriate therapy, medication or devices?

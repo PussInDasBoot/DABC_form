@@ -82,9 +82,14 @@ const radioTriggers = {
     walkingResolveYear: ["walkingResolve", "yes"],
     eating: ["feedingRestr", "severeRestrEat"],
     eatingTherapyAssist: ["eatingTherapyYesNo", "yes"],
+    eatingResolveYear: ["eatingResolve", "yes"],
     preparing: ["feedingRestr", "severeRestrPrepare"],
     preparingTherapyAssist: ["preparingTherapyYesNo", "yes"],
-    dressingTherapyAssist: ["dressingTherapyYesNo", "yes"]
+    preparingResolveYear: ["preparingResolve", "yes"],
+    dressingTherapyAssist: ["dressingTherapyYesNo", "yes"],
+    dressingResolveYear: ["dressingResolve", "yes"],
+    mentalCareExplain: ["mentalCare", "medication"],
+    mentalResolveYear: ["mentalResolve", "yes"],
 }
 
 
@@ -111,4 +116,10 @@ const checkboxTriggers = {
     dressingTherapyDevices: "dressingDevices",
     dressingTherapyTherapy: "dressingTherapy",
     dressingTherapyMedication: "dressingMedication",
+    mentalRestrSelf: "mentalSelf",
+    mentalRestrSocial: "mentalSocial",
+    mentalRestrTransactions: "mentalTransactions",
+    mentalRestrMemory: "mentalMemory",
+    mentalRestrProblem: "mentalProblem",
+
 }
