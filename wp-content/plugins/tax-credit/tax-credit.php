@@ -9,6 +9,8 @@ require_once dirname( __FILE__ ) .'/walking.php';
 require_once dirname( __FILE__ ) .'/feeding.php';
 require_once dirname( __FILE__ ) .'/dressing.php';
 require_once dirname( __FILE__ ) .'/mentalfunctions.php';
+require_once dirname( __FILE__ ) .'/lifesustaining.php';
+
 
 wp_register_script('tax-credit', plugins_url('/js/tax-credit.min.js', __FILE__ ));
 wp_enqueue_script('tax-credit');

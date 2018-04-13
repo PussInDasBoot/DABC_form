@@ -90,6 +90,7 @@ const radioTriggers = {
     dressingResolveYear: ["dressingResolve", "yes"],
     mentalCareExplain: ["mentalCare", "medication"],
     mentalResolveYear: ["mentalResolve", "yes"],
+    lifeTherapyFreq: ["lifeTherapy14", "no"]
 }
 
 
