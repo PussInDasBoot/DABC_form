@@ -84,6 +84,7 @@ const radioTriggers = {
     eatingTherapyAssist: ["eatingTherapyYesNo", "yes"],
     preparing: ["feedingRestr", "severeRestrPrepare"],
     preparingTherapyAssist: ["preparingTherapyYesNo", "yes"],
+    dressingTherapyAssist: ["dressingTherapyYesNo", "yes"]
 }
 
 
@@ -107,4 +108,7 @@ const checkboxTriggers = {
     preparingTherapyDevices: "preparingDevices",
     preparingTherapyTherapy: "preparingTherapy",
     preparingTherapyMedication: "preparingMedication",
+    dressingTherapyDevices: "dressingDevices",
+    dressingTherapyTherapy: "dressingTherapy",
+    dressingTherapyMedication: "dressingMedication",
 }
