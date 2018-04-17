@@ -229,19 +229,19 @@ function walking_registration_function() {
                         </div>
                         <div id="walkingTherapyAssist" hidden>
                             <div>
-                                <input type="checkbox" name="walkingTherapy" id="walkingTherapyDevices" value="devices">
+                                <input type="checkbox" name="walkingTherapyAssist" id="walkingTherapyDevices" value="devices">
                                 <label for="walkingTherapyDevices">
                                     I use devices
                                 </label>    
                             </div>
                             <div>
-                                <input type="checkbox" name="walkingTherapy" id="walkingTherapyTherapy" value="therapy">
+                                <input type="checkbox" name="walkingTherapyAssist" id="walkingTherapyTherapy" value="therapy">
                                 <label for="walkingTherapyTherapy">
                                     I receive therapy (physio, etc)
                                 </label>    
                             </div>
                             <div>
-                                <input type="checkbox" name="walkingTherapy" id="walkingTherapyMedication" value="medication">
+                                <input type="checkbox" name="walkingTherapyAssist" id="walkingTherapyMedication" value="medication">
                                 <label for="walkingTherapyMedication">
                                     I take medication
                                 </label>    
@@ -342,7 +342,7 @@ function walking_registration_function() {
                         What year did your restriction begin?
                     </td>
                     <td>
-                        <select name="walkingBegin">
+                        <select id="walkingBegin">
                         '; 
                         
                             for ($i = date('Y') ; $i > 1950; $i--) {
@@ -371,7 +371,7 @@ function walking_registration_function() {
                         </div>
                         <div id="walkingResolveYear" hidden>
                             In which year was it resolved?
-                        <select name="walkingResolveYear">
+                        <select id="walkingResolveYearSelect">
                         '; 
                         
                             for ($i = date('Y') ; $i > 1950; $i--) {

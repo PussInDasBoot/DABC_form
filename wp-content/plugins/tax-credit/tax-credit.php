@@ -22,13 +22,6 @@ function vision_registration_function() {
 
  
     echo '
-    <div class="panel" hidden>
-        <table>
-            <tr>
-            <button id="submit">Submit</button>
-            </tr>
-        </table>
-    </div>
     <p>This tool will create documents that will help you and your health care provider complete the application for the Disability Tax Credit, commonly referred to as the DTC.</p>
 
     <p>There are a couple different ways you can qualify for the DTC:</p>
