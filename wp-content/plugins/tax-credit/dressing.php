@@ -10,8 +10,8 @@ function dressing_registration_function() {
 
  
     echo '
-    <button class="accordion">Dressing</button>
-    <div class="panel">
+    <button class="accordion active">Dressing</button>
+    <div class="panel" style="display: block;">
       <table>
             <tr>
                 <td>
@@ -33,20 +33,20 @@ function dressing_registration_function() {
                         </label>
                     </div>
                     <div class="radio">
-                        <input type="radio" name="dressingRest" id="dressingRestThree" value="three">
-                        <label for="dressingRestThree">
+                        <input type="radio" name="dressingRestr" id="dressingRestrThree" value="three">
+                        <label for="dressingRestrThree">
                             At least three times as long, compared to an average person my age without my restrictions.
                         </label>
                     </div>
                     <div class="radio">
-                        <input type="radio" name="dressingRest" id="dressingRestTwo" value="two">
-                        <label for="dressingRestTwo">
+                        <input type="radio" name="dressingRestr" id="dressingRestrTwo" value="two">
+                        <label for="dressingRestrTwo">
                             At least two times as long, compared to an average person my age without my restrictions.
                         </label>
                     </div>
                     <div class="radio">
-                        <input type="radio" name="dressingRest" id="dressingRestLittle" value="little">
-                        <label for="dressingRestLittle">
+                        <input type="radio" name="dressingRestr" id="dressingRestrLittle" value="little">
+                        <label for="dressingRestrLittle">
                             A little bit longer, compared to an average person my age without my restrictions.
                         </label>
                     </div>
@@ -162,19 +162,19 @@ function dressing_registration_function() {
                     </div>
                     <div id="dressingTherapyAssist" hidden>
                         <div>
-                            <input type="checkbox" name="dressingTherapy" id="dressingTherapyDevices" value="devices">
+                            <input type="checkbox" name="dressingTherapyAssist" id="dressingTherapyDevices" value="devices">
                             <label for="dressingTherapyDevices">
                                 I use devices
                             </label>    
                         </div>
                         <div>
-                            <input type="checkbox" name="dressingTherapy" id="dressingTherapyTherapy" value="therapy">
+                            <input type="checkbox" name="dressingTherapyAssist" id="dressingTherapyTherapy" value="therapy">
                             <label for="dressingTherapyTherapy">
                                 I receive therapy (physio, etc)
                             </label>    
                         </div>
                         <div>
-                            <input type="checkbox" name="dressingTherapy" id="dressingTherapyMedication" value="medication">
+                            <input type="checkbox" name="dressingTherapyAssist" id="dressingTherapyMedication" value="medication">
                             <label for="dressingTherapyMedication">
                                 I take medication
                             </label>    
@@ -255,7 +255,7 @@ function dressing_registration_function() {
                     What year did your restriction begin?
                 </td>
                 <td>
-                    <select name="dressingBegin">
+                    <select id="dressingBegin">
                     '; 
                     
                         for ($i = date('Y') ; $i > 1950; $i--) {
@@ -284,7 +284,7 @@ function dressing_registration_function() {
                     </div>
                     <div id="dressingResolveYear" hidden>
                         In which year was it resolved?
-                    <select name="dressingResolveYear">
+                    <select id="dressingResolveYearSelect">
                     '; 
                     
                         for ($i = date('Y') ; $i > 1950; $i--) {

@@ -4,17 +4,17 @@ document.addEventListener("DOMContentLoaded", function(e) {
     const submitButton = document.querySelector("#submit");
     submitButton.onclick = function() {
         let walkingAble = '';
-        if (document.getElementById("walkingUnable").checked) {
+        if (document.getElementById("walkingRestrUnable").checked) {
             walkingAble = `Is unable to walk`;
         }
-        let walkingCause = ``;
+        let walkingDescribe = ``;
         let walkingLonger = ``;
         let walkingFreq = ``;
         let walkingDevice = ``;
         let walkingTherapy = ``;
         let walkingMedication = ``;
-        if (document.getElementById("walkingAble").checked) {
-            walkingCause = `Restricted by `;
+        if (document.getElementById("walkingRestrAble").checked) {
+            walkingDescribe = `Restricted by `;
             walkingLonger = `Requires`;
             walkingFreq = `Needs to stop and rest`;
             walkingAble = `Restricted in `;
@@ -28,15 +28,15 @@ document.addEventListener("DOMContentLoaded", function(e) {
             }
             walkingAble += arrayToSentence(walkingRestrictions)
 
-            let walkingCauses = [];
-            for (const wc of document.querySelectorAll('input[name=walkingCause]:checked')) {
-                if (wc.id=="walkingCauseOther") {
-                    walkingCauses.push(wc.nextElementSibling.nextElementSibling.value);
+            let walkingDescribes = [];
+            for (const wc of document.querySelectorAll('input[name=walkingDescribe]:checked')) {
+                if (wc.id=="walkingDescribeOther") {
+                    walkingDescribes.push(wc.nextElementSibling.nextElementSibling.value);
                 } else {
-                    walkingCauses.push(wc.nextElementSibling.innerText.toLowerCase());
+                    walkingDescribes.push(wc.nextElementSibling.innerText.toLowerCase());
                 }
             }
-            walkingCause += arrayToSentence(walkingCauses);
+            walkingDescribe += arrayToSentence(walkingDescribes);
 
             walkingLonger += `${document.querySelector('input[name=walkingLonger]:checked').nextElementSibling.innerText.substring('I take'.length)} to walk a flight of stairs or one block compared to an average person their age without their condition`;
 
@@ -94,11 +94,11 @@ document.addEventListener("DOMContentLoaded", function(e) {
         // Compile
         const walkingDiagnosis = document.getElementById("walkingMedicalCondition").value; 
         if (walkingDiagnosis) {
-            const email = document.getElementById("email");
+            const email = document.getElementById("walking");
             email.innerHTML = `Walking:`
             const ul = document.createElement('ul');
             email.appendChild(ul);
-            const walkingArray = [`Diagnosed with ${walkingDiagnosis}`, walkingAble, walkingCause, walkingLonger, walkingFreq, walkingDevice,  walkingTherapy, walkingMedication, walkingBegin, walkingResolve];
+            const walkingArray = [`Diagnosed with ${walkingDiagnosis}`, walkingAble, walkingDescribe, walkingLonger, walkingFreq, walkingDevice,  walkingTherapy, walkingMedication, walkingBegin, walkingResolve];
             for (const w of walkingArray) {
                 if (w) {
                     const li = document.createElement("li");

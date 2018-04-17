@@ -158,19 +158,19 @@ function eliminating_registration_function() {
                     </div>
                     <div id="elimTherapyAssist" hidden>
                         <div>
-                            <input type="checkbox" name="elimTherapy" id="elimTherapyDevices" value="devices">
+                            <input type="checkbox" name="elimTherapyAssist" id="elimTherapyDevices" value="devices">
                             <label for="elimTherapyDevices">
                                 I use devices
                             </label>    
                         </div>
                         <div>
-                            <input type="checkbox" name="elimTherapy" id="elimTherapyTherapy" value="therapy">
+                            <input type="checkbox" name="elimTherapyAssist" id="elimTherapyTherapy" value="therapy">
                             <label for="elimTherapyTherapy">
                                 I receive therapy (physio, etc)
                             </label>    
                         </div>
                         <div>
-                            <input type="checkbox" name="elimTherapy" id="elimTherapyMedication" value="medication">
+                            <input type="checkbox" name="elimTherapyAssist" id="elimTherapyMedication" value="medication">
                             <label for="elimTherapyMedication">
                                 I take medication
                             </label>    
@@ -252,7 +252,7 @@ function eliminating_registration_function() {
                     What year did your restriction begin?
                 </td>
                 <td>
-                    <select name="elimBegin">
+                    <select id="elimBegin">
                     '; 
                     
                         for ($i = date('Y') ; $i > 1950; $i--) {
@@ -281,7 +281,7 @@ function eliminating_registration_function() {
                     </div>
                     <div id="elimResolveYear" hidden>
                         In which year was it resolved?
-                    <select name="elimResolveYear">
+                    <select id="elimResolveYearSelect">
                     '; 
                     
                         for ($i = date('Y') ; $i > 1950; $i--) {

@@ -10,8 +10,8 @@ function walking_registration_function() {
 
  
     echo '
-    <button class="accordion active">Walking</button>
-    <div class="panel" style="display: block;">
+    <button class="accordion">Walking</button>
+    <div class="panel">
       <table>
             <tr>
                 <td>
@@ -27,14 +27,14 @@ function walking_registration_function() {
                 </td>
                 <td>
                     <div class="radio">
-                        <input type="radio" name="walkingAble" id="walkingUnable" value="unable">
-                        <label for="walkingUnable">
+                        <input type="radio" name="walkingRestrAble" id="walkingRestrUnable" value="unable">
+                        <label for="walkingRestrUnable">
                             I am unable to walk
                         </label>
                     </div>
                     <div class="radio">
-                        <input type="radio" name="walkingAble" id="walkingAble" value="able">
-                        <label for="walkingAble">
+                        <input type="radio" name="walkingRestrAble" id="walkingRestrAble" value="able">
+                        <label for="walkingRestrAble">
                             I am able to walk
                         </label>
                     </div>
@@ -80,53 +80,53 @@ function walking_registration_function() {
                     </td>
                     <td>
                         <div>
-                            <input type="checkbox" name="walkingCause" id="walkingCausePain" value="pain">
-                            <label for="walkingCausePain">
+                            <input type="checkbox" name="walkingDescribe" id="walkingDescribePain" value="pain">
+                            <label for="walkingDescribePain">
                                 Pain
                             </label>    
                         </div>
                         <div>
-                            <input type="checkbox" name="walkingCause" id="walkingCauseStiffness" value="stiffness">
-                            <label for="walkingCauseStiffness">
+                            <input type="checkbox" name="walkingDescribe" id="walkingDescribeStiffness" value="stiffness">
+                            <label for="walkingDescribeStiffness">
                                 Stiffness
                             </label>    
                         </div>
                         <div>
-                            <input type="checkbox" name="walkingCause" id="walkingCauseNumbness" value="numbness">
-                            <label for="walkingCauseNumbness">
+                            <input type="checkbox" name="walkingDescribe" id="walkingDescribeNumbness" value="numbness">
+                            <label for="walkingDescribeNumbness">
                                 Numbness
                             </label>    
                         </div>
                         <div>
-                            <input type="checkbox" name="walkingCause" id="walkingCauseFatigue" value="fatigue">
-                            <label for="walkingCauseFatigue">
+                            <input type="checkbox" name="walkingDescribe" id="walkingDescribeFatigue" value="fatigue">
+                            <label for="walkingDescribeFatigue">
                                 Fatigue
                             </label>    
                         </div>
                         <div>
-                            <input type="checkbox" name="walkingCause" id="walkingCauseMotion" value="motion">
-                            <label for="walkingCauseMotion">
+                            <input type="checkbox" name="walkingDescribe" id="walkingDescribeMotion" value="motion">
+                            <label for="walkingDescribeMotion">
                                 Limited range of motion
                             </label>    
                         </div>
                         <div>
-                            <input type="checkbox" name="walkingCause" id="walkingCauseBalance" value="balance">
-                            <label for="walkingCauseBalance">
+                            <input type="checkbox" name="walkingDescribe" id="walkingDescribeBalance" value="balance">
+                            <label for="walkingDescribeBalance">
                                 Poor coordination/balance
                             </label>    
                         </div>
                         <div>
-                            <input type="checkbox" name="walkingCause" id="walkingCauseMotor" value="motor">
-                            <label for="walkingCauseMotor">
+                            <input type="checkbox" name="walkingDescribe" id="walkingDescribeMotor" value="motor">
+                            <label for="walkingDescribeMotor">
                                 Poor motor skills
                             </label>    
                         </div>
                         <div>
-                            <input type="checkbox" name="walkingCause" id="walkingCauseOther" value="other">
-                            <label for="walkingCauseOther">
+                            <input type="checkbox" name="walkingDescribe" id="walkingDescribeOther" value="other">
+                            <label for="walkingDescribeOther">
                                 Other:
                             </label>
-                            <input type="text" id="walkingCauseOtherInput"></input>     
+                            <input type="text" id="walkingDescribeOtherInput"></input>     
                         </div>
                     </td>
                 </tr>
@@ -382,7 +382,6 @@ function walking_registration_function() {
                     </td>
                 </tr>
         </table>
-        <button id="submit">Submit</button>
     </div>
     ';
 }

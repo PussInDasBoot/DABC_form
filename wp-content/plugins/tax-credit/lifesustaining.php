@@ -132,7 +132,7 @@ function life_registration_function() {
                     When did you begin receiving this life sustaining therapy three times a week for a minimum of 14 hours?
                 </td>
                 <td>
-                    <select name="lifeBegin">
+                    <select id="lifeBegin">
                     '; 
                     
                         for ($i = date('Y') ; $i > 1950; $i--) {
@@ -144,6 +144,7 @@ function life_registration_function() {
             </tr>
         </table>
     </div>
+    <button id="submit">Submit</button>
     ';
 }
 

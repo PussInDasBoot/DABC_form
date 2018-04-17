@@ -121,19 +121,19 @@ function hearing_registration_function() {
                     </div>
                     <div id="hearingTherapyAssist" hidden>
                         <div>
-                            <input type="checkbox" name="hearingTherapy" id="hearingTherapyDevices" value="devices">
+                            <input type="checkbox" name="hearingTherapyAssist" id="hearingTherapyDevices" value="devices">
                             <label for="hearingTherapyDevices">
                                 I use devices
                             </label>    
                         </div>
                         <div>
-                            <input type="checkbox" name="hearingTherapy" id="hearingTherapyTherapy" value="therapy">
+                            <input type="checkbox" name="hearingTherapyAssist" id="hearingTherapyTherapy" value="therapy">
                             <label for="hearingTherapyTherapy">
                                 I receive therapy (physio, etc)
                             </label>    
                         </div>
                         <div>
-                            <input type="checkbox" name="hearingTherapy" id="hearingTherapyMedication" value="medication">
+                            <input type="checkbox" name="hearingTherapyAssist" id="hearingTherapyMedication" value="medication">
                             <label for="hearingTherapyMedication">
                                 I take medication
                             </label>    
@@ -215,7 +215,7 @@ function hearing_registration_function() {
                     What year did your restriction begin?
                 </td>
                 <td>
-                    <select name="hearingBegin">
+                    <select id="hearingBegin">
                     '; 
                     
                         for ($i = date('Y') ; $i > 1950; $i--) {
@@ -244,7 +244,7 @@ function hearing_registration_function() {
                     </div>
                     <div id="hearingResolveYear" hidden>
                         In which year was it resolved?
-                    <select name="hearingResolveYear">
+                    <select id="hearingResolveYearSelect">
                     '; 
                     
                         for ($i = date('Y') ; $i > 1950; $i--) {

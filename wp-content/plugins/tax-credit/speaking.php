@@ -140,19 +140,19 @@ function speaking_registration_function() {
                     </div>
                     <div id="speechTherapyAssist" hidden>
                         <div>
-                            <input type="checkbox" name="speechTherapy" id="speechTherapyDevices" value="devices">
+                            <input type="checkbox" name="speechTherapyAssist" id="speechTherapyDevices" value="devices">
                             <label for="speechTherapyDevices">
                                 I use devices
                             </label>    
                         </div>
                         <div>
-                            <input type="checkbox" name="speechTherapy" id="speechTherapyTherapy" value="therapy">
+                            <input type="checkbox" name="speechTherapyAssist" id="speechTherapyTherapy" value="therapy">
                             <label for="speechTherapyTherapy">
                                 I receive therapy (physio, etc)
                             </label>    
                         </div>
                         <div>
-                            <input type="checkbox" name="speechTherapy" id="speechTherapyMedication" value="medication">
+                            <input type="checkbox" name="speechTherapyAssist" id="speechTherapyMedication" value="medication">
                             <label for="speechTherapyMedication">
                                 I take medication
                             </label>    
@@ -233,7 +233,7 @@ function speaking_registration_function() {
                     What year did your restriction begin?
                 </td>
                 <td>
-                    <select name="speechBegin">
+                    <select id="speechBegin">
                     '; 
                     
                         for ($i = date('Y') ; $i > 1950; $i--) {
@@ -262,7 +262,7 @@ function speaking_registration_function() {
                     </div>
                     <div id="speechResolveYear" hidden>
                         In which year was it resolved?
-                    <select name="speechResolveYear">
+                    <select id="speechResolveYearSelect">
                     '; 
                     
                         for ($i = date('Y') ; $i > 1950; $i--) {

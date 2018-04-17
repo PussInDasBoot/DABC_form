@@ -154,19 +154,19 @@ function feeding_registration_function() {
                         </div>
                         <div id="eatingTherapyAssist" hidden>
                             <div>
-                                <input type="checkbox" name="eatingTherapy" id="eatingTherapyDevices" value="devices">
+                                <input type="checkbox" name="eatingTherapyAssist" id="eatingTherapyDevices" value="devices">
                                 <label for="eatingTherapyDevices">
                                     I use devices
                                 </label>    
                             </div>
                             <div>
-                                <input type="checkbox" name="eatingTherapy" id="eatingTherapyTherapy" value="therapy">
+                                <input type="checkbox" name="eatingTherapyAssist" id="eatingTherapyTherapy" value="therapy">
                                 <label for="eatingTherapyTherapy">
                                     I receive therapy (physio, etc)
                                 </label>    
                             </div>
                             <div>
-                                <input type="checkbox" name="eatingTherapy" id="eatingTherapyMedication" value="medication">
+                                <input type="checkbox" name="eatingTherapyAssist" id="eatingTherapyMedication" value="medication">
                                 <label for="eatingTherapyMedication">
                                     I take medication
                                 </label>    
@@ -276,7 +276,7 @@ function feeding_registration_function() {
                         </div>
                         <div id="eatingResolveYear" hidden>
                             In which year was it resolved?
-                        <select name="eatingResolveYear">
+                        <select id="eatingResolveYear">
                         '; 
                         
                             for ($i = date('Y') ; $i > 1950; $i--) {
@@ -426,19 +426,19 @@ function feeding_registration_function() {
                         </div>
                         <div id="preparingTherapyAssist" hidden>
                             <div>
-                                <input type="checkbox" name="preparingTherapy" id="preparingTherapyDevices" value="devices">
+                                <input type="checkbox" name="preparingTherapyAssist" id="preparingTherapyDevices" value="devices">
                                 <label for="preparingTherapyDevices">
                                     I use devices
                                 </label>    
                             </div>
                             <div>
-                                <input type="checkbox" name="preparingTherapy" id="preparingTherapyTherapy" value="therapy">
+                                <input type="checkbox" name="preparingTherapyAssist" id="preparingTherapyTherapy" value="therapy">
                                 <label for="preparingTherapyTherapy">
                                     I receive therapy (physio, etc)
                                 </label>    
                             </div>
                             <div>
-                                <input type="checkbox" name="preparingTherapy" id="preparingTherapyMedication" value="medication">
+                                <input type="checkbox" name="preparingTherapyAssist" id="preparingTherapyMedication" value="medication">
                                 <label for="preparingTherapyMedication">
                                     I take medication
                                 </label>    
@@ -519,7 +519,7 @@ function feeding_registration_function() {
                         What year did your restriction begin?
                     </td>
                     <td>
-                        <select name="preparingBegin">
+                        <select id="preparingBegin">
                         '; 
                         
                             for ($i = date('Y') ; $i > 1950; $i--) {
@@ -548,7 +548,7 @@ function feeding_registration_function() {
                         </div>
                         <div id="preparingResolveYear" hidden>
                             In which year was it resolved?
-                        <select name="preparingResolveYear">
+                        <select id="preparingResolveYearSelect">
                         '; 
                         
                             for ($i = date('Y') ; $i > 1950; $i--) {

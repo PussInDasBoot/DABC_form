@@ -353,7 +353,7 @@ function mental_registration_function() {
                     What year did your restriction begin?
                 </td>
                 <td>
-                    <select name="mentalBegin">
+                    <select id="mentalBegin">
                     '; 
                     
                         for ($i = date('Y') ; $i > 1950; $i--) {
@@ -382,7 +382,7 @@ function mental_registration_function() {
                     </div>
                     <div id="mentalResolveYear" hidden>
                         In which year was it resolved?
-                    <select name="mentalResolveYear">
+                    <select id="mentalResolveYearSelect">
                     '; 
                     
                         for ($i = date('Y') ; $i > 1950; $i--) {
