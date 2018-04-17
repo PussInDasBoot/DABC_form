@@ -1,3 +1,12 @@
+require("./vision.js");
+require("./speaking.js");
+require("./hearing.js");
+require("./walking.js");
+require("./eliminating.js");
+require("./feeding.js");
+require("./dressing.js");
+require("./mentalfunctions.js");
+
 document.addEventListener("DOMContentLoaded", function(e) {
     const accordions = document.getElementsByClassName("accordion");
 

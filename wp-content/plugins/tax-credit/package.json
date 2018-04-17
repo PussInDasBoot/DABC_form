@@ -8,7 +8,10 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "webpack": "^3.10.0"
+    "array-to-sentence": "^2.0.0"
   },
-  "description": ""
+  "description": "",
+  "devDependencies": {
+    "webpack": "^3.11.0"
+  }
 }

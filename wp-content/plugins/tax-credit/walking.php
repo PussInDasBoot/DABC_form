@@ -10,8 +10,8 @@ function walking_registration_function() {
 
  
     echo '
-    <button class="accordion">Walking</button>
-    <div class="panel">
+    <button class="accordion active">Walking</button>
+    <div class="panel" style="display: block;">
       <table>
             <tr>
                 <td>
@@ -382,6 +382,7 @@ function walking_registration_function() {
                     </td>
                 </tr>
         </table>
+        <button id="submit">Submit</button>
     </div>
     ';
 }
