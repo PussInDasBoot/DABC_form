@@ -1,13 +1,19 @@
-require("./vision.js");
-require("./speaking.js");
-require("./hearing.js");
-require("./walking.js");
-require("./eliminating.js");
-require("./feeding.js");
-require("./dressing.js");
-require("./mentalfunctions.js");
+import { vision } from './vision.js';
+import { speaking } from './speaking.js';
+import { hearing } from './hearing.js';
+import { eliminating } from './eliminating.js';
+import { walking } from './walking.js';
+import { feeding } from './feeding.js';
+import { dressing } from './dressing.js';
+import { mentalfunctions } from './mentalfunctions.js';
 
 document.addEventListener("DOMContentLoaded", function(e) {
+    const submitButton = document.querySelector("#submit");
+    submitButton.onclick = function() {
+        dressing();
+        walking();
+
+    }
     const accordions = document.getElementsByClassName("accordion");
 
     for (const acc of accordions) {
