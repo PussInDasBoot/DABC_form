@@ -40,7 +40,7 @@ function speaking_registration_function() {
                     </div>
                 </td>
             </tr>
-            <tbody id="speechUnable" hidden>
+            <tbody id="speechAble" hidden>
                 <tr>
                     <td>
                         How often does this happen?

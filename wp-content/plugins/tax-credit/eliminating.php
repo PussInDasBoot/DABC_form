@@ -40,213 +40,215 @@ function eliminating_registration_function() {
                     </div>
                 </td>
             </tr>
-            <tr id="elimSevereRestrFreq">
-                <td>
-                    How often does this happen?
-                </td>
-                <td>
-                    <div class="radio">
-                        <input type="radio" name="elimRestrFreq" id="elimRestrFreqRarely" value="rarely">
-                        <label for="elimRestrFreqRarely">
-                            Rarely
-                        </label>
-                    </div>
-                    <div class="radio">
-                        <input type="radio" name="elimRestrFreq" id="elimRestrFreqSome" value="some">
-                        <label for="elimRestrFreqSome">
-                            Some of the time 
-                        </label>
-                    </div>
-                    <div class="radio">
-                        <input type="radio" name="elimRestrFreq" id="elimRestrFreqVery" value="very">
-                        <label for="elimRestrFreqVery">
-                            At least 90% of the time
-                        </label>
-                    </div>
-                </td>
-            </tr>
-            <tr>
-                <td>
-                    How much longer do you require to manage your elimination?
-                </td>
-                <td>
-                    <div class="radio">
-                        <input type="radio" name="elimLonger" id="elimLongerThree" value="three">
-                        <label for="elimLongerThree">
-                            At least three times as long, compared to an average person my age without my restrictions.
-                        </label>
-                    </div>
-                    <div class="radio">
-                        <input type="radio" name="elimLonger" id="elimLongerTwo" value="two">
-                        <label for="elimLongerTwo">
-                            At least two times as long, compared to an average person my age without my restrictions.
-                        </label>
-                    </div>
-                    <div class="radio">
-                        <input type="radio" name="elimLonger" id="elimLongerLittle" value="little">
-                        <label for="elimLongerLittle">
-                            A little bit longer, compared to an average person my age without my restrictions.
-                        </label>
-                    </div>
-                <td>
-            </tr>
-            <tr>
-                <td>
-                    What causes you to be restricted? Select all that apply:
-                </td>
-                <td>
-                    <div>
-                        <input type="checkbox" name="elimDescribe" id="elimDescribeDiarrhea" value="diarrhea">
-                        <label for="elimDescribeDiarrhea">
-                            Diarrhea
-                        </label>
-                    </div>
-                    <div>
-                        <input type="checkbox" name="elimDescribe" id="elimDescribeConstipation" value="Constipation">
-                        <label for="elimDescribeonstipation">
-                            Constipation
-                        </label>
-                    </div>
-                    <div>
-                        <input type="checkbox" name="elimDescribe" id="elimDescribeUrine" value="urine">
-                        <label for="elimDescribeUrine">
-                            Frequent Urination
-                        </label>
-                    </div>
-                    <div>
-                        <input type="checkbox" name="elimDescribe" id="elimDescribeBleeding" value="bleeding">
-                        <label for="elimDescribeBleeding">
-                            Bleeding
-                        </label>
-                    </div>
-                    <div>
-                        <input type="checkbox" name="elimDescribe" id="elimDescribeOstomy" value="ostomy">
-                        <label for="elimDescribeOstomy">
-                            Ostomy
-                        </label>
-                    </div>
-                    <div>
-                        <input type="checkbox" name="elimDescribe" id="elimDescribeBowel" value="bowel">
-                        <label for="elimDescribeBowel">
-                            Incontinence (bowel)
-                        </label>
-                    </div>
-                    <div>
-                        <input type="checkbox" name="elimDescribe" id="elimDescribeBladder" value="bladder">
-                        <label for="elimDescribeBladder">
-                            Incontinence (bladder)
-                        </label>
-                    </div>
-                </td>
-            </tr>
-            <tr>
-                <td>
-                    Do you use any appropriate therapy, medication or devices to assist you?
-                </td>
-                <td>
-                    <div class="radio">
-                        <input type="radio" name="elimTherapyYesNo" id="elimTherapyNo" value="no">
-                        <label for="elimTherapyNo">
-                            No 
-                        </label>    
-                    </div>
-                    <div class="radio">
-                        <input type="radio" name="elimTherapyYesNo" id="elimTherapyYes" value="yes">
-                        <label for="elimTherapyYes">
-                            Yes 
-                        </label>    
-                    </div>
-                    <div id="elimTherapyAssist" hidden>
+            <tbody id="elimAble" hidden>
+                <tr>
+                    <td>
+                        How often does this happen?
+                    </td>
+                    <td>
+                        <div class="radio">
+                            <input type="radio" name="elimRestrFreq" id="elimRestrFreqRarely" value="rarely">
+                            <label for="elimRestrFreqRarely">
+                                Rarely
+                            </label>
+                        </div>
+                        <div class="radio">
+                            <input type="radio" name="elimRestrFreq" id="elimRestrFreqSome" value="some">
+                            <label for="elimRestrFreqSome">
+                                Some of the time 
+                            </label>
+                        </div>
+                        <div class="radio">
+                            <input type="radio" name="elimRestrFreq" id="elimRestrFreqVery" value="very">
+                            <label for="elimRestrFreqVery">
+                                At least 90% of the time
+                            </label>
+                        </div>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        How much longer do you require to manage your elimination?
+                    </td>
+                    <td>
+                        <div class="radio">
+                            <input type="radio" name="elimLonger" id="elimLongerThree" value="three">
+                            <label for="elimLongerThree">
+                                At least three times as long, compared to an average person my age without my restrictions.
+                            </label>
+                        </div>
+                        <div class="radio">
+                            <input type="radio" name="elimLonger" id="elimLongerTwo" value="two">
+                            <label for="elimLongerTwo">
+                                At least two times as long, compared to an average person my age without my restrictions.
+                            </label>
+                        </div>
+                        <div class="radio">
+                            <input type="radio" name="elimLonger" id="elimLongerLittle" value="little">
+                            <label for="elimLongerLittle">
+                                A little bit longer, compared to an average person my age without my restrictions.
+                            </label>
+                        </div>
+                    <td>
+                </tr>
+                <tr>
+                    <td>
+                        What causes you to be restricted? Select all that apply:
+                    </td>
+                    <td>
                         <div>
-                            <input type="checkbox" name="elimTherapyAssist" id="elimTherapyDevices" value="devices">
-                            <label for="elimTherapyDevices">
-                                I use devices
+                            <input type="checkbox" name="elimDescribe" id="elimDescribeDiarrhea" value="diarrhea">
+                            <label for="elimDescribeDiarrhea">
+                                Diarrhea
+                            </label>
+                        </div>
+                        <div>
+                            <input type="checkbox" name="elimDescribe" id="elimDescribeConstipation" value="Constipation">
+                            <label for="elimDescribeonstipation">
+                                Constipation
+                            </label>
+                        </div>
+                        <div>
+                            <input type="checkbox" name="elimDescribe" id="elimDescribeUrine" value="urine">
+                            <label for="elimDescribeUrine">
+                                Frequent Urination
+                            </label>
+                        </div>
+                        <div>
+                            <input type="checkbox" name="elimDescribe" id="elimDescribeBleeding" value="bleeding">
+                            <label for="elimDescribeBleeding">
+                                Bleeding
+                            </label>
+                        </div>
+                        <div>
+                            <input type="checkbox" name="elimDescribe" id="elimDescribeOstomy" value="ostomy">
+                            <label for="elimDescribeOstomy">
+                                Ostomy
+                            </label>
+                        </div>
+                        <div>
+                            <input type="checkbox" name="elimDescribe" id="elimDescribeBowel" value="bowel">
+                            <label for="elimDescribeBowel">
+                                Incontinence (bowel)
+                            </label>
+                        </div>
+                        <div>
+                            <input type="checkbox" name="elimDescribe" id="elimDescribeBladder" value="bladder">
+                            <label for="elimDescribeBladder">
+                                Incontinence (bladder)
+                            </label>
+                        </div>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        Do you use any appropriate therapy, medication or devices to assist you?
+                    </td>
+                    <td>
+                        <div class="radio">
+                            <input type="radio" name="elimTherapyYesNo" id="elimTherapyNo" value="no">
+                            <label for="elimTherapyNo">
+                                No 
+                            </label>    
+                        </div>
+                        <div class="radio">
+                            <input type="radio" name="elimTherapyYesNo" id="elimTherapyYes" value="yes">
+                            <label for="elimTherapyYes">
+                                Yes 
+                            </label>    
+                        </div>
+                        <div id="elimTherapyAssist" hidden>
+                            <div>
+                                <input type="checkbox" name="elimTherapyAssist" id="elimTherapyDevices" value="devices">
+                                <label for="elimTherapyDevices">
+                                    I use devices
+                                </label>    
+                            </div>
+                            <div>
+                                <input type="checkbox" name="elimTherapyAssist" id="elimTherapyTherapy" value="therapy">
+                                <label for="elimTherapyTherapy">
+                                    I receive therapy (physio, etc)
+                                </label>    
+                            </div>
+                            <div>
+                                <input type="checkbox" name="elimTherapyAssist" id="elimTherapyMedication" value="medication">
+                                <label for="elimTherapyMedication">
+                                    I take medication
+                                </label>    
+                            </div>
+                        </div>
+                        
+                    </td>
+                </tr>
+                <tr id="elimDevices" hidden>
+                    <td>
+                        Please indicate the devices you use.
+                    </td>
+                    <td>
+                        <div>
+                            <input type="checkbox" name="elimDevices" id="elimDevicesAdaptive" value="adaptive">
+                            <label for="elimDevicesAdaptive">
+                                Adaptive equipment 
                             </label>    
                         </div>
                         <div>
-                            <input type="checkbox" name="elimTherapyAssist" id="elimTherapyTherapy" value="therapy">
-                            <label for="elimTherapyTherapy">
-                                I receive therapy (physio, etc)
+                            <input type="checkbox" name="elimDevices" id="elimDevicesOther" value="other">
+                            <label for="elimDevicesOther">
+                                Other:
+                            </label>
+                            <input type="text" id="elimDevicesOtherInput"></input>     
+                        </div>
+                    </td>
+                </tr>
+                <tr id="elimTherapy" hidden>
+                    <td>
+                        Please indicate the therapy you receive.
+                    </td>
+                    <td>
+                        <div>
+                            <input type="checkbox" name="elimTherapy" id="elimTherapyPhysio" value="physio">
+                            <label for="elimTherapyPhysio">
+                                Physiotherapy
                             </label>    
                         </div>
                         <div>
-                            <input type="checkbox" name="elimTherapyAssist" id="elimTherapyMedication" value="medication">
-                            <label for="elimTherapyMedication">
-                                I take medication
+                            <input type="checkbox" name="elimTherapy" id="elimTherapyChiro" value="chiro">
+                            <label for="elimTherapyChiro">
+                                Chiropractic
                             </label>    
                         </div>
-                    </div>
-                    
-                </td>
-            </tr>
-            <tr id="elimDevices" hidden>
-                <td>
-                    Please indicate the devices you use.
-                </td>
-                <td>
-                    <div>
-                        <input type="checkbox" name="elimDevices" id="elimDevicesAdaptive" value="adaptive">
-                        <label for="elimDevicesAdaptive">
-                            Adaptive equipment 
-                        </label>    
-                    </div>
-                    <div>
-                        <input type="checkbox" name="elimDevices" id="elimDevicesOther" value="other">
-                        <label for="elimDevicesOther">
-                            Other:
-                        </label>
-                        <input type="text" id="elimDevicesOtherInput"></input>     
-                    </div>
-                </td>
-            </tr>
-            <tr id="elimTherapy" hidden>
-                <td>
-                    Please indicate the therapy you receive.
-                </td>
-                <td>
-                    <div>
-                        <input type="checkbox" name="elimTherapy" id="elimTherapyPhysio" value="physio">
-                        <label for="elimTherapyPhysio">
-                            Physiotherapy
-                        </label>    
-                    </div>
-                    <div>
-                        <input type="checkbox" name="elimTherapy" id="elimTherapyChiro" value="chiro">
-                        <label for="elimTherapyChiro">
-                            Chiropractic
-                        </label>    
-                    </div>
-                    <div>
-                        <input type="checkbox" name="elimTherapy" id="elimTherapyMassage" value="massage">
-                        <label for="elimTherapyMassage">
-                            Massage
-                        </label>    
-                    </div>
-                    <div>
-                        <input type="checkbox" name="elimTherapy" id="elimTherapyOcc" value="occ">
-                        <label for="elimTherapyOcc">
-                            Occupational Therapy
-                        </label>    
-                    </div>
-                    <div>
-                        <input type="checkbox" name="elimTherapy" id="elimTherapyOther" value="other">
-                        <label for="elimTherapyOther">
-                            Other:
-                        </label>
-                        <input type="text" id="elimTherapyOtherInput"></input>     
-                    </div>
-                </td>
-            </tr>
-            <tr id="elimMedication" hidden>
-                <td>
-                    Please indicate what medication you take to address your restriction.
-                </td>
-                <td>
-                    <div id="elimMedication">
-                        <input type="text" id="elimMedicationInput"></input>  
-                    </div>
-                </td>
-            </tr>
+                        <div>
+                            <input type="checkbox" name="elimTherapy" id="elimTherapyMassage" value="massage">
+                            <label for="elimTherapyMassage">
+                                Massage
+                            </label>    
+                        </div>
+                        <div>
+                            <input type="checkbox" name="elimTherapy" id="elimTherapyOcc" value="occ">
+                            <label for="elimTherapyOcc">
+                                Occupational Therapy
+                            </label>    
+                        </div>
+                        <div>
+                            <input type="checkbox" name="elimTherapy" id="elimTherapyOther" value="other">
+                            <label for="elimTherapyOther">
+                                Other:
+                            </label>
+                            <input type="text" id="elimTherapyOtherInput"></input>     
+                        </div>
+                    </td>
+                </tr>
+                <tr id="elimMedication" hidden>
+                    <td>
+                        Please indicate what medication you take to address your restriction.
+                    </td>
+                    <td>
+                        <div id="elimMedication">
+                            <input type="text" id="elimMedicationInput"></input>  
+                        </div>
+                    </td>
+                </tr>
+            </tbody>
             <tr>
                 <td>
                     What year did your restriction begin?
