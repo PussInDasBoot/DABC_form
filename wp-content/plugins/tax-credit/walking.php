@@ -12,7 +12,26 @@ function walking_registration_function() {
     echo '
     <button class="accordion">Walking</button>
     <div class="panel">
-      <table>
+        <table>
+            <tr>
+                <td>
+                    Do you have a walking restriction?
+                </td>
+                <td>
+                    <span class="radio">
+                        <input type="radio" name="walkingYesNo" id="walkingNo" value="no">
+                        <label for="walkingNo">
+                            No&emsp;
+                        </label>
+                    </span>
+                    <span class="radio">
+                        <input type="radio" name="walkingYesNo" id="walkingYes" value="yes">
+                        <label for="walkingYes">
+                            Yes
+                        </label>
+                    </span>
+                </td>
+            </tr>
             <tr>
                 <td>
                     Do you have medical conditions or diagnoses that restrict your walking most of the time? Please list all if more than one.
