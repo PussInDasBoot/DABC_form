@@ -12,7 +12,26 @@ function dressing_registration_function() {
     echo '
     <button class="accordion">Dressing</button>
     <div class="panel">
-      <table>
+        <table>
+            <tr>
+                <td>
+                    Do you have a restriction with dressing?
+                </td>
+                <td>
+                    <span class="radio">
+                        <input type="radio" name="dressingYesNo" id="dressingNo" value="no">
+                        <label for="dressingNo">
+                            No&emsp;
+                        </label>
+                    </span>
+                    <span class="radio">
+                        <input type="radio" name="dressingYesNo" id="dressingYes" value="yes">
+                        <label for="dressingYes">
+                            Yes
+                        </label>
+                    </span>
+                </td>
+            </tr>
             <tr>
                 <td>
                     Do you have a medical condition or diagnosis which restrict your ability to dress and undress yourself most of the time?

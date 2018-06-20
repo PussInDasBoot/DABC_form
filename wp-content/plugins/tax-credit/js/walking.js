@@ -1,6 +1,12 @@
 import arrayToSentence from 'array-to-sentence';
 
 export function walking() {
+    let walkingDiagnosis = ``;
+    const walkingDiagnosisEl = document.getElementById("walkingMedicalCondition").value;
+    if (walkingDiagnosisEl) {
+        walkingDiagnosis = `Diagnosed with ${walkingDiagnosisEl}`;
+    }
+
     let walkingAble = '';
     if (document.getElementById("walkingRestrUnable").checked) {
         walkingAble = `Is unable to walk`;
@@ -106,11 +112,6 @@ export function walking() {
     }
 
     // Compile
-    let walkingDiagnosis = ``;
-    const walkingDiagnosisEl = document.getElementById("walkingMedicalCondition").value;
-    if (walkingDiagnosisEl) {
-        walkingDiagnosis = `Diagnosed with ${walkingDiagnosisEl}`;
-    }
     if (document.getElementById('walkingYes').checked) {
         const email = document.getElementById("walking");
         email.innerHTML = `Walking:`
