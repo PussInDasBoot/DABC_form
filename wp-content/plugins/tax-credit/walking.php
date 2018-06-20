@@ -337,50 +337,50 @@ function walking_registration_function() {
                     </td>
                 </tr>
             </tbody>
-                <tr>
-                    <td>
-                        What year did your restriction begin?
-                    </td>
-                    <td>
-                        <select id="walkingBegin">
-                        '; 
-                        
-                            for ($i = date('Y') ; $i > 1950; $i--) {
-                                echo "<option>$i</option>";
-                            };
-                        
-                        echo '</select>
-                    </td>
-                </tr>
-                <tr>
-                    <td>
-                        Has your restriction resolved?
-                    </td>
-                    <td>
-                        <div class="radio">
-                            <input type="radio" name="walkingResolve" id="walkingResolveNo" value="no">
-                            <label for="walkingResolveNo">
-                                No 
-                            </label>
-                        </div>
-                        <div class="radio">
-                            <input type="radio" name="walkingResolve" id="walkingResolveYes" value="yes">
-                            <label for="walkingResolveYes">
-                                Yes
-                            </label>
-                        </div>
-                        <div id="walkingResolveYear" hidden>
-                            In which year was it resolved?
-                        <select id="walkingResolveYearSelect">
-                        '; 
-                        
-                            for ($i = date('Y') ; $i > 1950; $i--) {
-                                echo "<option>$i</option>";
-                            };
-                        
-                        echo '</select>
-                    </td>
-                </tr>
+            <tr>
+                <td>
+                    What year did your restriction begin?
+                </td>
+                <td>
+                    <select id="walkingBegin">
+                    '; 
+                    
+                        for ($i = date('Y') ; $i > 1950; $i--) {
+                            echo "<option>$i</option>";
+                        };
+                    
+                    echo '</select>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    Has your restriction resolved?
+                </td>
+                <td>
+                    <div class="radio">
+                        <input type="radio" name="walkingResolve" id="walkingResolveNo" value="no">
+                        <label for="walkingResolveNo">
+                            No 
+                        </label>
+                    </div>
+                    <div class="radio">
+                        <input type="radio" name="walkingResolve" id="walkingResolveYes" value="yes">
+                        <label for="walkingResolveYes">
+                            Yes
+                        </label>
+                    </div>
+                    <div id="walkingResolveYear" hidden>
+                        In which year was it resolved?
+                    <select id="walkingResolveYearSelect">
+                    '; 
+                    
+                        for ($i = date('Y') ; $i > 1950; $i--) {
+                            echo "<option>$i</option>";
+                        };
+                    
+                    echo '</select>
+                </td>
+            </tr>
         </table>
     </div>
     ';

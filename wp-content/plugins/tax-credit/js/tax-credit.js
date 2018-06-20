@@ -74,7 +74,7 @@ document.addEventListener("DOMContentLoaded", function(e) {
 // key is id of target element, value is array of trigger elements [name, value]
 const radioTriggers = {
     visionRestrExplain: ["visionRestr", "severeRestr"],
-    visionSevereRestrictionFreq: ["visionRestr", "severeRestr"],
+    visionNotBlind: ["visionRestr", "severeRestr"],
     visionTherapyExplain: ["visionTherapy", "yes"],
     visionResolveYear: ["visionResolve", "yes"],
     speechSevereRestrFreq: ["speechRestr", "severeRestr"],

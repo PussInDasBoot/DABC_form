@@ -67,54 +67,111 @@ function vision_registration_function() {
                     </div>
                 </td>
             </tr>
-            <tr id="visionSevereRestrictionFreq" hidden>
-                <td>
-                    How often does this happen?
-                </td>
-                <td>
-                    <div class="radio">
-                        <input type="radio" name="visionRestrFreq" id="visionRestrFreqRarely" value="rarely">
-                        <label for="visionRestrFreqRarely">
-                            Rarely
-                        </label>
-                    </div>
-                    <div class="radio">
-                        <input type="radio" name="visionRestrFreq" id="visionRestrFreqSome" value="some">
-                        <label for="visionRestrFreqSome">
-                            Some of the time 
-                        </label>
-                    </div>
-                    <div class="radio">
-                        <input type="radio" name="visionRestrFreq" id="visionRestrFreqVery" value="very">
-                        <label for="visionRestrFreqVery">
-                            At least 90% of the time
-                        </label>
-                    </div>
-                </td>
-            </tr>
-            <tr>
-                <td>
-                    Do you use any appropriate therapy, medication or devices?
-                </td>
-                <td>
-                    <div class="radio">
-                        <input type="radio" name="visionTherapy" id="visionTherapyNo" value="no">
-                        <label for="visionTherapyNo">
-                            No 
-                        </label>
-                    </div>
-                    <div class="radio">
-                        <input type="radio" name="visionTherapy" id="visionTherapyYes" value="yes">
-                        <label for="visionTherapyYes">
-                            Yes
-                        </label>
-                    </div>
-                    <div id="visionTherapyExplain" hidden>
-                        Explain:
-                        <input type="text" id="visionTherapyExplainInput"></input>
-                    </div>
-                </td>
-            </tr>
+            <tbody id="visionNotBlind" hidden>
+                <tr>
+                    <td>
+                        How often does this happen?
+                    </td>
+                    <td>
+                        <div class="radio">
+                            <input type="radio" name="visionRestrFreq" id="visionRestrFreqRarely" value="rarely">
+                            <label for="visionRestrFreqRarely">
+                                Rarely
+                            </label>
+                        </div>
+                        <div class="radio">
+                            <input type="radio" name="visionRestrFreq" id="visionRestrFreqSome" value="some">
+                            <label for="visionRestrFreqSome">
+                                Some of the time 
+                            </label>
+                        </div>
+                        <div class="radio">
+                            <input type="radio" name="visionRestrFreq" id="visionRestrFreqVery" value="very">
+                            <label for="visionRestrFreqVery">
+                                At least 90% of the time
+                            </label>
+                        </div>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        Describe your effects:
+                    </td>
+                    <td>
+                        <div>
+                            <input type="checkbox" name="visionEffects" id="visionEffectsBlurred" value="blurred">
+                            <label for="visionEffectsBlurred">
+                                Blurred vision
+                            </label>
+                        </div>
+                        <div>
+                            <input type="checkbox" name="visionEffects" id="visionEffectsSensitivity" value="sensitivity">
+                            <label for="visionEffectsSensitivity">
+                                Sensitivity to light
+                            </label>
+                        </div>
+                        <div>
+                            <input type="checkbox" name="visionEffects" id="visionEffectsDouble" value="double">
+                            <label for="visionEffectsDouble">
+                                Double vision
+                            </label>
+                        </div>
+                        <div>
+                            <input type="checkbox" name="visionEffects" id="visionEffectsTraffic" value="traffic">
+                            <label for="visionEffectsTraffic">
+                                Difficulty reading traffic signs
+                            </label>
+                        </div>
+                        <div>
+                            <input type="checkbox" name="visionEffects" id="visionEffectsText" value="text">
+                            <label for="visionEffectsText">
+                                Difficulty reading text or books
+                            </label>
+                        </div>
+                        <div>
+                            <input type="checkbox" name="visionEffects" id="visionEffectsBlindSpots" value="blindSpots">
+                            <label for="visionEffectsBlindSpots">
+                                Blind spots
+                            </label>
+                        </div>
+                        <div>
+                            <input type="checkbox" name="visionEffects" id="visionEffectsReduced" value="reduced">
+                            <label for="visionEffectsReduced">
+                                Reduced field of vision
+                            </label>
+                        </div>
+                        <div>
+                            <input type="checkbox" name="visionEffects" id="visionEffectsFlashing" value="flashing">
+                            <label for="visionEffectsFlashing">
+                                Flashing lights/wavy lines in vision
+                            </label>
+                        </div>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        Do you use any appropriate therapy, medication or devices?
+                    </td>
+                    <td>
+                        <div class="radio">
+                            <input type="radio" name="visionTherapy" id="visionTherapyNo" value="no">
+                            <label for="visionTherapyNo">
+                                No 
+                            </label>
+                        </div>
+                        <div class="radio">
+                            <input type="radio" name="visionTherapy" id="visionTherapyYes" value="yes">
+                            <label for="visionTherapyYes">
+                                Yes
+                            </label>
+                        </div>
+                        <div id="visionTherapyExplain" hidden>
+                            Explain:
+                            <input type="text" id="visionTherapyExplainInput"></input>
+                        </div>
+                    </td>
+                </tr>
+            </tbody>
             <tr>
                 <td>
                     What year did your restriction with vision begin?
