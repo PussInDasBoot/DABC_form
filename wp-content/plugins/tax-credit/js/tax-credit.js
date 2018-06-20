@@ -98,6 +98,8 @@ const radioTriggers = {
     preparingUnable: ["feedingRestr", "unablePrepare"],
     preparingTherapyAssist: ["preparingTherapyYesNo", "yes"],
     preparingResolveYear: ["preparingResolve", "yes"],
+    dressingRestr: ["dressingRestrAble", "able"],
+    dressingAble: ["dressingRestrAble", "able"],
     dressingTherapyAssist: ["dressingTherapyYesNo", "yes"],
     dressingResolveYear: ["dressingResolve", "yes"],
     mentalCareExplain: ["mentalCare", "medication"],
