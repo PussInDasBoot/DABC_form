@@ -108,7 +108,7 @@ const radioTriggers = {
 }
 
 
-//key is id of target element, value is id of trigger element
+//key is id of trigger element, value is id of target element
 const checkboxTriggers = {
     speechTherapyDevices: "speechDevices",
     speechTherapyTherapy: "speechTherapy",
@@ -136,4 +136,5 @@ const checkboxTriggers = {
     mentalRestrTransactions: "mentalTransactions",
     mentalRestrMemory: "mentalMemory",
     mentalRestrProblem: "mentalProblem",
+    mentalProblemSuicide: "mentalCrisisLine",
 }

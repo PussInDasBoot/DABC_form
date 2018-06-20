@@ -15,7 +15,7 @@ function mental_registration_function() {
       <table>
             <tr>
                 <td>
-                    Do you have a medical condition or diagnosis which restrict your day to day mental functioning?  Please list all if more than one.
+                    Do you have a medical condition or diagnosis which restricts your day to day mental functioning?  Please list all if more than one.
                 </td>
                 <td>
                     <textarea id="mentalMedicalCondition"></textarea>
@@ -53,21 +53,9 @@ function mental_registration_function() {
                             </label>    
                         </div>
                         <div>
-                            <input type="checkbox" name="mentalRestr" id="mentalRestrGoals" value="goals">
-                            <label for="mentalRestrGoals">
-                                Set and achieve day to day goals for myself.
-                            </label>    
-                        </div>
-                        <div>
                             <input type="checkbox" name="mentalRestr" id="mentalRestrProblem" value="problem">
                             <label for="mentalRestrProblem">
-                                Problem solve day to day challenges that arise.
-                            </label>    
-                        </div>
-                        <div>
-                            <input type="checkbox" name="mentalRestr" id="mentalRestrChoices" value="choices">
-                            <label for="mentalRestrChoices">
-                                Make healthy and safe choices for myself.
+                                Set and achieve day to day goals for myself or problem solve day to day challenges that arise or make healthy and safe choices for myself
                             </label>    
                         </div>
                     </div>
@@ -163,7 +151,7 @@ function mental_registration_function() {
             </tr>
             <tr id="mentalTransactions" hidden>
                 <td>
-                    How are you restricted in making simple transactions such as purchasing groceries or clothing for myself.
+                    How are you restricted in making simple transactions such as purchasing groceries or clothing for yourself.
                 </td>
                 <td>
                     <div>
@@ -265,6 +253,15 @@ function mental_registration_function() {
                         <label for="mentalProblemImpulsive">
                             I am often impulsive and make decisions that are high risk with little to no planning.
                         </label>    
+                    </div>
+                    <div>
+                        <input type="checkbox" name="mentalProblem" id="mentalProblemSuicide" value="suicide">
+                        <label for="mentalProblemSuicide">
+                            I have, now or in the past, had frequent thoughts of hurting myself or ending my life.
+                        </label>    
+                    </div>
+                    <div id="mentalCrisisLine" hidden>
+                        Info about crisis line
                     </div>
                     <div>
                         <input type="checkbox" name="mentalProblem" id="mentalProblemOther" value="other">
