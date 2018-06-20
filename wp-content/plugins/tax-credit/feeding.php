@@ -62,7 +62,7 @@ function feeding_registration_function() {
                         <div class="radio">
                             <input type="radio" name="eatingLonger" id="eatingLongerUnable" value="unable">
                             <label for="eatingLongerUnable">
-                                I am unable to prepare food or eat without assistance.
+                                I am unable to eat without assistance.
                             </label>
                         </div>
                         <div class="radio">
@@ -124,6 +124,12 @@ function feeding_registration_function() {
                             <input type="checkbox" name="eatingDescribe" id="eatingDescribeSwallowing" value="swallowing">
                             <label for="eatingDescribeSwallowing">
                                 Difficulty swallowing
+                            </label>
+                        </div>
+                        <div>
+                            <input type="checkbox" name="eatingDescribe" id="eatingDescribeCoordination" value="coordination">
+                            <label for="eatingDescribeCoordination">
+                                Poor coordination
                             </label>
                         </div>
                         <div>
@@ -287,6 +293,52 @@ function feeding_registration_function() {
                     </td>
                 </tr>
             </tbody>
+            <tbody id="eatingUnable" hidden>
+                <tr>
+                    <td>
+                        What year did your restriction with eating begin?
+                    </td>
+                    <td>
+                        <select name="eatingBegin">
+                        '; 
+                        
+                            for ($i = date('Y') ; $i > 1950; $i--) {
+                                echo "<option>$i</option>";
+                            };
+                        
+                        echo '</select>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        Has your restriction with eating resolved?
+                    </td>
+                    <td>
+                        <div class="radio">
+                            <input type="radio" name="eatingResolve" id="eatingResolveNo" value="no">
+                            <label for="eatingResolveNo">
+                                No 
+                            </label>
+                        </div>
+                        <div class="radio">
+                            <input type="radio" name="eatingResolve" id="eatingResolveYes" value="yes">
+                            <label for="eatingResolveYes">
+                                Yes
+                            </label>
+                        </div>
+                        <div id="eatingResolveYear" hidden>
+                            In which year was it resolved?
+                        <select id="eatingResolveYear">
+                        '; 
+                        
+                            for ($i = date('Y') ; $i > 1950; $i--) {
+                                echo "<option>$i</option>";
+                            };
+                        
+                        echo '</select>
+                    </td>
+                </tr>
+            </tbody>
             <tbody id="preparing" hidden>
                 <th>Preparing Food</th>
                 <tr>
@@ -297,7 +349,7 @@ function feeding_registration_function() {
                         <div class="radio">
                             <input type="radio" name="preparingLonger" id="preparingLongerUnable" value="unable">
                             <label for="preparingLongerUnable">
-                                I am unable to prepare food or eat without assistance.
+                                I am unable to prepare food without assistance.
                             </label>
                         </div>
                         <div class="radio">
@@ -532,6 +584,52 @@ function feeding_registration_function() {
                 <tr>
                     <td>
                         Has your restriction resolved?
+                    </td>
+                    <td>
+                        <div class="radio">
+                            <input type="radio" name="preparingResolve" id="preparingResolveNo" value="no">
+                            <label for="preparingResolveNo">
+                                No 
+                            </label>
+                        </div>
+                        <div class="radio">
+                            <input type="radio" name="preparingResolve" id="preparingResolveYes" value="yes">
+                            <label for="preparingResolveYes">
+                                Yes
+                            </label>
+                        </div>
+                        <div id="preparingResolveYear" hidden>
+                            In which year was it resolved?
+                        <select id="preparingResolveYearSelect">
+                        '; 
+                        
+                            for ($i = date('Y') ; $i > 1950; $i--) {
+                                echo "<option>$i</option>";
+                            };
+                        
+                        echo '</select>
+                    </td>
+                </tr>
+            </tbody>
+            <tbody id="preparingUnable" hidden>
+                <tr>
+                    <td>
+                        What year did your restriction with preparing food begin?
+                    </td>
+                    <td>
+                        <select id="preparingBegin">
+                        '; 
+                        
+                            for ($i = date('Y') ; $i > 1950; $i--) {
+                                echo "<option>$i</option>";
+                            };
+                        
+                        echo '</select>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        Has your restriction with preparing food resolved?
                     </td>
                     <td>
                         <div class="radio">
