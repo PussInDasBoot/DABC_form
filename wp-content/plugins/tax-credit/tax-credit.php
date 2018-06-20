@@ -38,6 +38,25 @@ function vision_registration_function() {
         <table>
             <tr>
                 <td>
+                    Do you have a vision restriction?
+                </td>
+                <td>
+                    <span class="radio">
+                        <input type="radio" name="visionYesNo" id="visionNo" value="no">
+                        <label for="visionNo">
+                            No&emsp;
+                        </label>
+                    </span>
+                    <span class="radio">
+                        <input type="radio" name="visionYesNo" id="visionYes" value="yes">
+                        <label for="visionYes">
+                            Yes
+                        </label>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td>
                     Do you have medical conditions or diagnoses that restrict your vision most of the time? Please list all if more than one.
                 </td>
                 <td>
@@ -177,7 +196,7 @@ function vision_registration_function() {
                     What year did your restriction with vision begin?
                 </td>
                 <td>
-                    <select name="visionBegin">
+                    <select id="visionBegin">
                     '; 
                     
                         for ($i = date('Y') ; $i > 1950; $i--) {
@@ -206,7 +225,7 @@ function vision_registration_function() {
                     </div>
                     <div id="visionResolveYear" hidden>
                         In which year was it resolved?
-                        <select name="visionResolveYear">
+                        <select id="visionResolveYearSelect">
                         '; 
                         
                             for ($i = date('Y') ; $i > 1950; $i--) {

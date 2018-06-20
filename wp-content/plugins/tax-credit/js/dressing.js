@@ -4,12 +4,12 @@ export function dressing() {
     let dressingDiagnosis = ``;
     const dressingDiagnosisEl = document.getElementById("dressingMedicalCondition").value; 
     if (dressingDiagnosisEl) {
-        dressingDiagnosis = `Diagnosed with ${dressingDiagnosisEl}`;
+        dressingDiagnosis = `I am diagnosed with ${dressingDiagnosisEl}`;
     }
 
     let dressingAble = ``;
     if (document.getElementById("dressingRestrUnable").checked) {
-        dressingAble = `Is unable to dress without assistance`;
+        dressingAble = `I am unable to dress without assistance`;
     }
     let dressingRestr = ``;
     let dressingDescribe = ``;
@@ -28,7 +28,7 @@ export function dressing() {
     // Cause of restriction
     const dressingRestrEls = document.querySelectorAll('input[name=dressingDescribe]:checked');
     if (dressingRestrEls.length > 0) {
-        dressingDescribe = `Restricted by `;
+        dressingDescribe = `I am restricted by `;
         let dressingDescribes = [];
         for (const dd of document.querySelectorAll('input[name=dressingDescribe]:checked')) {
             dressingDescribes.push(dd.nextElementSibling.innerText.toLowerCase());
@@ -39,7 +39,7 @@ export function dressing() {
     // What is difficult
     const dressingDifficultEls = document.querySelectorAll('input[name=dressingDifficult]:checked');
     if (dressingDifficultEls.length > 0) {
-        dressingDifficult = `Has difficulty putting on the following articles of clothing: `
+        dressingDifficult = `I have difficulty putting on the following articles of clothing: `
         let dressingDifficults = [];
         for (const dd of document.querySelectorAll('input[name=dressingDifficult]:checked')) {
             dressingDifficults.push(dd.nextElementSibling.innerText.toLowerCase());
@@ -53,7 +53,7 @@ export function dressing() {
         let dressingDevices = document.querySelectorAll('input[name=dressingDevices]:checked');
         if (dressingDevices[0]) {
             let dressingDevicesArray = [];
-            dressingDevice = `Requires use of `;
+            dressingDevice = `I require the use of `;
             for (const wd of dressingDevices) {
                 if (wd.id == "dressingDevicesOther") {
                     dressingDevicesArray.push(wd.nextElementSibling.nextElementSibling.value);
@@ -68,7 +68,7 @@ export function dressing() {
         let dressingTherapies = document.querySelectorAll('input[name=dressingTherapy]:checked');
         if (dressingTherapies[0]) {
             let dressingTherapiesArray = [];
-            dressingTherapy = `Requires regular `;
+            dressingTherapy = `I require regular `;
             for (const wt of dressingTherapies) {
                 if (wt.id == "dressingTherapyOther") {
                     dressingTherapiesArray.push(wt.nextElementSibling.nextElementSibling.value);
@@ -81,20 +81,20 @@ export function dressing() {
 
         //dressingMedication
         if (document.getElementById('dressingTherapyMedication').checked) {
-            dressingMedication = `Takes ${document.getElementById("dressingMedicationInput").value}`;
+            dressingMedication = `I takes ${document.getElementById("dressingMedicationInput").value}`;
         }
     }
 
     const dressingBeginSelect = document.getElementById('dressingBegin');
-    let dressingBegin = `Restriction began in ${dressingBeginSelect.options[dressingBeginSelect.selectedIndex].value}`;
+    let dressingBegin = `My restriction began in ${dressingBeginSelect.options[dressingBeginSelect.selectedIndex].value}`;
 
     let dressingResolve = ``;
     const dressingResolveSelect = document.getElementById('dressingResolveYearSelect');
     if (document.getElementById("dressingResolveNo").checked) {
-        dressingResolve = `Restriction is ongoing`;
+        dressingResolve = `My restriction is ongoing`;
     }
     if (document.getElementById("dressingResolveYes").checked) {
-        dressingResolve = `Restriction resolved in ${dressingResolveSelect.options[dressingResolveSelect.selectedIndex].value}`;
+        dressingResolve = `My restriction resolved in ${dressingResolveSelect.options[dressingResolveSelect.selectedIndex].value}`;
     }
 
     // Compile

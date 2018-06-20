@@ -12,7 +12,7 @@ document.addEventListener("DOMContentLoaded", function(e) {
     submitButton.onclick = function() {
         dressing();
         walking();
-
+        vision();
     }
     const accordions = document.getElementsByClassName("accordion");
 

@@ -390,14 +390,14 @@ function walking_registration_function() {
                     </div>
                     <div id="walkingResolveYear" hidden>
                         In which year was it resolved?
-                    <select id="walkingResolveYearSelect">
-                    '; 
+                        <select id="walkingResolveYearSelect">
+                        '; 
                     
-                        for ($i = date('Y') ; $i > 1950; $i--) {
-                            echo "<option>$i</option>";
-                        };
+                            for ($i = date('Y') ; $i > 1950; $i--) {
+                                echo "<option>$i</option>";
+                            };
                     
-                    echo '</select>
+                        echo '</select>
                 </td>
             </tr>
         </table>

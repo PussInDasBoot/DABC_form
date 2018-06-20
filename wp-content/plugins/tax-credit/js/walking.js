@@ -4,12 +4,12 @@ export function walking() {
     let walkingDiagnosis = ``;
     const walkingDiagnosisEl = document.getElementById("walkingMedicalCondition").value;
     if (walkingDiagnosisEl) {
-        walkingDiagnosis = `Diagnosed with ${walkingDiagnosisEl}`;
+        walkingDiagnosis = `I am diagnosed with ${walkingDiagnosisEl}`;
     }
 
     let walkingAble = '';
     if (document.getElementById("walkingRestrUnable").checked) {
-        walkingAble = `Is unable to walk`;
+        walkingAble = `I am unable to walk`;
     }
     let walkingDescribe = ``;
     let walkingLonger = ``;
@@ -22,7 +22,7 @@ export function walking() {
     const walkingRestrEls = document.querySelectorAll('input[name=walkingRestr]:checked');
     if (walkingRestrEls.length > 0) {
         let walkingRestrictions = [];
-        walkingAble = `Restricted in `;
+        walkingAble = `I am restricted in `;
         for (const wr of walkingRestrEls) {
             if (wr.id=="walkingRestrOther") {
                 walkingRestrictions.push(wr.nextElementSibling.nextElementSibling.value);
@@ -36,7 +36,7 @@ export function walking() {
     // Causes of restriction
     const walkingDescribeEls = document.querySelectorAll('input[name=walkingDescribe]:checked');
     if (walkingDescribeEls.length > 0) {
-        walkingDescribe = `Restricted by `;
+        walkingDescribe = `I am restricted by `;
         let walkingDescribes = [];
         for (const wc of walkingDescribeEls) {
             if (wc.id=="walkingDescribeOther") {
@@ -51,13 +51,13 @@ export function walking() {
     // How much longer it takes them to walk
     const walkingLongerEl = document.querySelector('input[name=walkingLonger]:checked');
     if (walkingLongerEl) {
-        walkingLonger = `Requires`;
-        walkingLonger += `${walkingLongerEl.nextElementSibling.innerText.substring('I take'.length)} to walk a flight of stairs or one block compared to an average person their age without their condition`;
+        walkingLonger = `I require`;
+        walkingLonger += `${walkingLongerEl.nextElementSibling.innerText.substring('I take'.length)} to walk a flight of stairs or one block compared to an average person my age without my condition`;
     }
 
     // How frequently they have to stop and rest
     if (document.querySelector('input[name=walkingFreq]:checked')) {
-        walkingFreq = `Needs to stop and rest`;
+        walkingFreq = `I need to stop and rest`;
         walkingFreq += ` ${document.querySelector('input[name=walkingFreq]:checked').nextElementSibling.innerText.toLowerCase()} while walking`;
     }
 
@@ -67,7 +67,7 @@ export function walking() {
         let walkingDevices = document.querySelectorAll('input[name=walkingDevices]:checked');
         if (walkingDevices[0]) {
             let walkingDevicesArray = [];
-            walkingDevice = `Requires use of `;
+            walkingDevice = `I require the use of `;
             for (const wd of walkingDevices) {
                 if (wd.id == "walkingDevicesOther") {
                     walkingDevicesArray.push(wd.nextElementSibling.nextElementSibling.value);
@@ -82,7 +82,7 @@ export function walking() {
         let walkingTherapies = document.querySelectorAll('input[name=walkingTherapy]:checked');
         if (walkingTherapies[0]) {
             let walkingTherapiesArray = [];
-            walkingTherapy = `Requires regular `;
+            walkingTherapy = `I require regular `;
             for (const wt of walkingTherapies) {
                 if (wt.id == "walkingTherapyOther") {
                     walkingTherapiesArray.push(wt.nextElementSibling.nextElementSibling.value);
@@ -95,20 +95,20 @@ export function walking() {
 
         //walkingMedication
         if (document.getElementById('walkingTherapyMedication').checked) {
-            walkingMedication = `Takes ${document.getElementById("walkingMedicationInput").value}`;
+            walkingMedication = `I take ${document.getElementById("walkingMedicationInput").value}`;
         }
     }
         
     const walkingBeginSelect = document.getElementById('walkingBegin');
-    let walkingBegin = `Restriction began in ${walkingBeginSelect.options[walkingBeginSelect.selectedIndex].value}`;
+    let walkingBegin = `My restriction began in ${walkingBeginSelect.options[walkingBeginSelect.selectedIndex].value}`;
 
     let walkingResolve = ``;
     const walkingResolveSelect = document.getElementById('walkingResolveYearSelect');
     if (document.getElementById("walkingResolveNo").checked) {
-        walkingResolve = `Restriction is ongoing`;
+        walkingResolve = `My restriction is ongoing`;
     }
     if (document.getElementById("walkingResolveYes").checked) {
-        walkingResolve = `Restriction resolved in ${walkingResolveSelect.options[walkingResolveSelect.selectedIndex].value}`;
+        walkingResolve = `My restriction resolved in ${walkingResolveSelect.options[walkingResolveSelect.selectedIndex].value}`;
     }
 
     // Compile
