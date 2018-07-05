@@ -15,6 +15,25 @@ function feeding_registration_function() {
       <table>
             <tr>
                 <td>
+                    Do you have an eating or preparing food restriction?
+                </td>
+                <td>
+                    <span class="radio">
+                        <input type="radio" name="feedingYesNo" id="feedingNo" value="no">
+                        <label for="feedingNo">
+                            No&emsp;
+                        </label>
+                    </span>
+                    <span class="radio">
+                        <input type="radio" name="feedingYesNo" id="feedingYes" value="yes">
+                        <label for="feedingYes">
+                            Yes
+                        </label>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td>
                     Do you have a medical condition or diagnosis which restrict eating or using your hands, wrists or arms to prepare meals AND that occurs most of the time?
                 </td>
                 <td>
@@ -62,25 +81,25 @@ function feeding_registration_function() {
                         <div class="radio">
                             <input type="radio" name="eatingLonger" id="eatingLongerUnable" value="unable">
                             <label for="eatingLongerUnable">
-                                I am unable to eat without assistance.
+                                I am unable to eat without assistance
                             </label>
                         </div>
                         <div class="radio">
                             <input type="radio" name="eatingLonger" id="eatingLongerThree" value="three">
                             <label for="eatingLongerThree">
-                                At least three times as long, compared to an average person my age without my restrictions.
+                                At least three times as long, compared to an average person my age without my restrictions
                             </label>
                         </div>
                         <div class="radio">
                             <input type="radio" name="eatingLonger" id="eatingLongerTwo" value="two">
                             <label for="eatingLongerTwo">
-                                At least two times as long, compared to an average person my age without my restrictions.
+                                At least two times as long, compared to an average person my age without my restrictions
                             </label>
                         </div>
                         <div class="radio">
                             <input type="radio" name="eatingLonger" id="eatingLongerLittle" value="little">
                             <label for="eatingLongerLittle">
-                                A little bit longer, compared to an average person my age without my restrictions.
+                                A little bit longer, compared to an average person my age without my restrictions
                             </label>
                         </div>
                     <td>
@@ -188,7 +207,7 @@ function feeding_registration_function() {
                         <div>
                             <input type="checkbox" name="eatingDevices" id="eatingDevicesTubes" value="tubes">
                             <label for="eatingDevicesTubes">
-                                I need tube eatings. 
+                                I need tube feedings
                             </label>    
                         </div>
                         <div>
@@ -253,7 +272,7 @@ function feeding_registration_function() {
                         What year did your restriction begin?
                     </td>
                     <td>
-                        <select name="eatingBegin">
+                        <select id="eatingBegin">
                         '; 
                         
                             for ($i = date('Y') ; $i > 1950; $i--) {
@@ -355,19 +374,19 @@ function feeding_registration_function() {
                         <div class="radio">
                             <input type="radio" name="preparingLonger" id="preparingLongerThree" value="three">
                             <label for="preparingLongerThree">
-                                At least three times as long, compared to an average person my age without my restrictions.
+                                At least three times as long, compared to an average person my age without my restrictions
                             </label>
                         </div>
                         <div class="radio">
                             <input type="radio" name="preparingLonger" id="preparingLongerTwo" value="two">
                             <label for="preparingLongerTwo">
-                                At least two times as long, compared to an average person my age without my restrictions.
+                                At least two times as long, compared to an average person my age without my restrictions
                             </label>
                         </div>
                         <div class="radio">
                             <input type="radio" name="preparingLonger" id="preparingLongerLittle" value="little">
                             <label for="preparingLongerLittle">
-                                A little bit longer, compared to an average person my age without my restrictions.
+                                A little bit longer, compared to an average person my age without my restrictions
                             </label>
                         </div>
                     <td>
@@ -410,7 +429,7 @@ function feeding_registration_function() {
                         <div>
                             <input type="checkbox" name="preparingDescribe" id="preparingDescribeRest" value="rest">
                             <label for="preparingDescribeRest">
-                                I require frequent rests
+                                Requiring frequent rests
                             </label>
                         </div>
                         <div>

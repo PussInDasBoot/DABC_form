@@ -15,7 +15,7 @@ document.addEventListener("DOMContentLoaded", function(e) {
         hearing();
         eliminating();
         walking();
-        // feeding();
+        feeding();
         dressing();
     }
     const accordions = document.getElementsByClassName("accordion");
