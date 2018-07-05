@@ -48,6 +48,10 @@ export function dressing() {
     }
 
     // Use of therapy, medication or devices
+    if (document.getElementById("dressingTherapyNo").checked) {
+        dressingDevice = `No therapy, medication or devices corrects my restriction.`;
+    }
+
     if (document.getElementById("dressingTherapyYes").checked) {
         //dressingDevices
         let dressingDevices = document.querySelectorAll('input[name=dressingDevices]:checked');

@@ -5,7 +5,7 @@ import { eliminating } from './eliminating.js';
 import { walking } from './walking.js';
 import { feeding } from './feeding.js';
 import { dressing } from './dressing.js';
-import { mentalfunctions } from './mentalfunctions.js';
+import { mental } from './mentalfunctions.js';
 
 document.addEventListener("DOMContentLoaded", function(e) {
     const submitButton = document.querySelector("#submit");
@@ -17,6 +17,7 @@ document.addEventListener("DOMContentLoaded", function(e) {
         walking();
         feeding();
         dressing();
+        mental();
     }
     const accordions = document.getElementsByClassName("accordion");
 
@@ -106,7 +107,7 @@ const radioTriggers = {
     dressingAble: ["dressingRestrAble", "able"],
     dressingTherapyAssist: ["dressingTherapyYesNo", "yes"],
     dressingResolveYear: ["dressingResolve", "yes"],
-    mentalCareExplain: ["mentalCare", "medication"],
+    mentalCareYesExplain: ["mentalCareYesNo", "yes"],
     mentalResolveYear: ["mentalResolve", "yes"],
     lifeTherapyFreq: ["lifeTherapy14", "no"]
 }
@@ -141,4 +142,6 @@ const checkboxTriggers = {
     mentalRestrMemory: "mentalMemory",
     mentalRestrProblem: "mentalProblem",
     mentalProblemSuicide: "mentalCrisisLine",
+    mentalCareMedication: "mentalCareExplain",
+    mentalCareSupport: "mentalSupport"
 }
