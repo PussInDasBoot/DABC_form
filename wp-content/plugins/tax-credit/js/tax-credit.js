@@ -6,6 +6,7 @@ import { walking } from './walking.js';
 import { feeding } from './feeding.js';
 import { dressing } from './dressing.js';
 import { mental } from './mentalfunctions.js';
+import { life } from './life.js'
 
 document.addEventListener("DOMContentLoaded", function(e) {
     const submitButton = document.querySelector("#submit");
@@ -18,6 +19,7 @@ document.addEventListener("DOMContentLoaded", function(e) {
         feeding();
         dressing();
         mental();
+        life();
     }
     const accordions = document.getElementsByClassName("accordion");
 
@@ -109,7 +111,7 @@ const radioTriggers = {
     dressingResolveYear: ["dressingResolve", "yes"],
     mentalCareYesExplain: ["mentalCareYesNo", "yes"],
     mentalResolveYear: ["mentalResolve", "yes"],
-    lifeTherapyFreq: ["lifeTherapy14", "no"]
+    lifeTherapyFreq: ["lifeTherapy14", "yes"]
 }
 
 

@@ -10,7 +10,7 @@ function life_registration_function() {
 
  
     echo '
-    <button class="accordion">Life-Sustaining Therapy</button>
+    <button class="accordion">Life Sustaining Therapy</button>
     <div class="panel">
         <p>
             Life sustaining therapy is required to support a vital function. To qualify in this category you are required to receive at least 14 hours of therapy each week. Examples of life sustaining therapy include: kidney dialysis, insulin injections, chest physiotherapy. 
@@ -22,6 +22,25 @@ function life_registration_function() {
             If you are diagnosed with diabetes the following activities may be counted towards 14 hours of life sustaining therapy: monitoring blood sugar, preparing and administering insulin, calibrating/preparing necessary equipment, including changing infusion sites for the insulin pump, maintaining a logbook of blood sugar levels.
         </p>
         <table>
+            <tr>
+                <td>
+                    Do you receive life-sustaining therapy?
+                </td>
+                <td>
+                    <span class="radio">
+                        <input type="radio" name="lifeYesNo" id="lifeNo" value="no">
+                        <label for="lifeNo">
+                            No&emsp;
+                        </label>
+                    </span>
+                    <span class="radio">
+                        <input type="radio" name="lifeYesNo" id="lifeYes" value="yes">
+                        <label for="lifeYes">
+                            Yes
+                        </label>
+                    </span>
+                </td>
+            </tr>
             <tr>
                 <td>
                     Please share your medical condition or diagnosis which requires life sustaining therapy
