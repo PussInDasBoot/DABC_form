@@ -1,5 +1,5 @@
 import { vision } from './vision.js';
-import { speaking } from './speaking.js';
+import { speech } from './speaking.js';
 import { hearing } from './hearing.js';
 import { eliminating } from './eliminating.js';
 import { walking } from './walking.js';
@@ -10,9 +10,13 @@ import { mentalfunctions } from './mentalfunctions.js';
 document.addEventListener("DOMContentLoaded", function(e) {
     const submitButton = document.querySelector("#submit");
     submitButton.onclick = function() {
-        dressing();
-        walking();
         vision();
+        speech();
+        // hearing();
+        // eliminating();
+        walking();
+        // feeding();
+        dressing();
     }
     const accordions = document.getElementsByClassName("accordion");
 
@@ -74,7 +78,7 @@ document.addEventListener("DOMContentLoaded", function(e) {
 // key is id of target element, value is array of trigger elements [name, value]
 const radioTriggers = {
     visionRestrExplain: ["visionRestr", "severeRestr"],
-    visionNotBlind: ["visionRestr", "severeRestr"],
+    visionAble: ["visionRestr", "severeRestr"],
     visionTherapyExplain: ["visionTherapy", "yes"],
     visionResolveYear: ["visionResolve", "yes"],
     speechAble: ["speechRestr", "severeRestr"],

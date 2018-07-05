@@ -15,6 +15,25 @@ function speaking_registration_function() {
       <table>
             <tr>
                 <td>
+                    Do you have a speech restriction?
+                </td>
+                <td>
+                    <span class="radio">
+                        <input type="radio" name="speechYesNo" id="speechNo" value="no">
+                        <label for="speechNo">
+                            No&emsp;
+                        </label>
+                    </span>
+                    <span class="radio">
+                        <input type="radio" name="speechYesNo" id="speechYes" value="yes">
+                        <label for="speechYes">
+                            Yes
+                        </label>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td>
                     Do you have medical conditions or diagnoses that restrict your ability to speak most of the time? Please list all if more than one.
                 </td>
                 <td>
@@ -74,25 +93,25 @@ function speaking_registration_function() {
                         <div class="radio">
                             <input type="radio" name="speechLonger" id="speechLongerThree" value="three">
                             <label for="speechLongerThree">
-                                At least three times as long, compared to an average person my age without my restrictions.
+                                At least three times as long, compared to an average person my age without my restrictions
                             </label>
                         </div>
                         <div class="radio">
                             <input type="radio" name="speechLonger" id="speechLongerTwo" value="two">
                             <label for="speechLongerTwo">
-                                At least two times as long, compared to an average person my age without my restrictions.
+                                At least two times as long, compared to an average person my age without my restrictions
                             </label>
                         </div>
                         <div class="radio">
                             <input type="radio" name="speechLonger" id="speechLongerLittle" value="little">
                             <label for="speechLongerLittle">
-                                A little bit longer, compared to an average person my age without my restrictions.
+                                A little bit longer, compared to an average person my age without my restrictions
                             </label>
                         </div>
                         <div class="radio">
                             <input type="radio" name="speechLonger" id="speechLongerSame" value="same">
                             <label for="speechLongerSame">
-                                The same amount of time, compared to an average person my age without my restrictions.
+                                The same amount of time, compared to an average person my age without my restrictions
                             </label>
                         </div>
                     <td>

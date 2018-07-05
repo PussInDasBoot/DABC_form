@@ -69,8 +69,8 @@ function vision_registration_function() {
                 </td>
                 <td>
                     <div class="radio">
-                        <input type="radio" name="visionRestr" id="visionRestrBlind" value="legallyBlind">
-                        <label for="visionRestrBlind">
+                        <input type="radio" name="visionRestr" id="visionRestrUnable" value="unable">
+                        <label for="visionRestrUnable">
                             I am legally blind, with a visual acuity of 20/200 or less with the Snellen Chart or field of vision in both eyes is 20 degrees or less.
                         </label>
                     </div>
@@ -86,7 +86,7 @@ function vision_registration_function() {
                     </div>
                 </td>
             </tr>
-            <tbody id="visionNotBlind" hidden>
+            <tbody id="visionAble" hidden>
                 <tr>
                     <td>
                         How often does this happen?

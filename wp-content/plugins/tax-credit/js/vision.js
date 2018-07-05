@@ -8,15 +8,12 @@ export function vision() {
     }
 
     let visionAble = '';
-    if (document.getElementById("visionRestrBlind").checked) {
+    if (document.getElementById("visionRestrUnable").checked) {
         visionAble = `I am legally blind, with a visual acuity of 20/200 or less with the Snellen Chart or field of vision in both eyes is 20 degrees or less.`;
     }
     let visionDescribe = ``;
     let visionLonger = ``;
-    let visionFreq = ``;
     let visionDevice = ``;
-    let visionTherapy = ``;
-    let visionMedication = ``;
 
     // Frequency of vision restrictions
     const visionLongerEl = document.querySelector('input[name=visionRestrFreq]:checked');
