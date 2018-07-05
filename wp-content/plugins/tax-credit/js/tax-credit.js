@@ -12,7 +12,7 @@ document.addEventListener("DOMContentLoaded", function(e) {
     submitButton.onclick = function() {
         vision();
         speech();
-        // hearing();
+        hearing();
         // eliminating();
         walking();
         // feeding();

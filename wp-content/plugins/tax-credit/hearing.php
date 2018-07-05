@@ -14,6 +14,25 @@ function hearing_registration_function() {
       <table>
             <tr>
                 <td>
+                    Do you have a hearing restriction?
+                </td>
+                <td>
+                    <span class="radio">
+                        <input type="radio" name="hearingYesNo" id="hearingNo" value="no">
+                        <label for="hearingNo">
+                            No&emsp;
+                        </label>
+                    </span>
+                    <span class="radio">
+                        <input type="radio" name="hearingYesNo" id="hearingYes" value="yes">
+                        <label for="hearingYes">
+                            Yes
+                        </label>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td>
                     Do you have medical conditions or diagnoses that restrict your hearing most of the time? Please list all if more than one.
                 </td>
                 <td>
@@ -48,25 +67,25 @@ function hearing_registration_function() {
                         <div class="radio">
                             <input type="radio" name="hearingLonger" id="hearingLongerThree" value="three">
                             <label for="hearingLongerThree">
-                                At least three times as long, compared to an average person my age without my restrictions.
+                                At least three times as long, compared to an average person my age without my restrictions
                             </label>
                         </div>
                         <div class="radio">
                             <input type="radio" name="hearingLonger" id="hearingLongerTwo" value="two">
                             <label for="hearingLongerTwo">
-                                At least two times as long, compared to an average person my age without my restrictions.
+                                At least two times as long, compared to an average person my age without my restrictions
                             </label>
                         </div>
                         <div class="radio">
                             <input type="radio" name="hearingLonger" id="hearingLongerLittle" value="little">
                             <label for="hearingLongerLittle">
-                                A little bit longer, compared to an average person my age without my restrictions.
+                                A little bit longer, compared to an average person my age without my restrictions
                             </label>
                         </div>
                         <div class="radio">
                             <input type="radio" name="hearingLonger" id="hearingLongerSame" value="same">
                             <label for="hearingLongerSame">
-                                The same amount of time, compared to an average person my age without my restrictions.
+                                The same amount of time, compared to an average person my age without my restrictions
                             </label>
                         </div>
                     <td>
@@ -79,19 +98,19 @@ function hearing_registration_function() {
                         <div>
                             <input type="checkbox" name="hearingDescribe" id="hearingDescribeLip" value="lip">
                             <label for="hearingDescribeLip">
-                                I rely on lip reading to understand a spoken conversation.
+                                I rely on lip reading to understand a spoken conversation
                             </label>
                         </div>
                         <div>
                             <input type="checkbox" name="hearingDescribe" id="hearingDescribeSign" value="sign">
                             <label for="hearingDescribeSign">
-                                I use sign language to communicate.
+                                I use sign language to communicate
                             </label>
                         </div>
                         <div>
                             <input type="checkbox" name="hearingDescribe" id="hearingDescribeRaise" value="raise">
                             <label for="hearingDescribeRaise">
-                                People usually have to raise their voice to communicate with me.
+                                People usually have to raise their voice to communicate with me
                             </label>
                         </div>
                         <div>

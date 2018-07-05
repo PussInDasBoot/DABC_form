@@ -122,11 +122,3 @@ export function speech() {
         }
     }
 }
-
-//key is id of selected option, value is text to display
-const letterText = {
-        speechRestrSlow: "speech slowly",
-        speechRestrRest: "needing to stop and rest frequently",
-        speechRestrStairs: "speech up/down stairs",
-        speechRestrIncline: "speech up/down inclines",
-    }
