@@ -13,7 +13,7 @@ document.addEventListener("DOMContentLoaded", function(e) {
         vision();
         speech();
         hearing();
-        // eliminating();
+        eliminating();
         walking();
         // feeding();
         dressing();

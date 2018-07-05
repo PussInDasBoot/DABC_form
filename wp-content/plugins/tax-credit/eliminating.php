@@ -15,6 +15,25 @@ function eliminating_registration_function() {
       <table>
             <tr>
                 <td>
+                    Do you have a restriction regarding elimination?
+                </td>
+                <td>
+                    <span class="radio">
+                        <input type="radio" name="elimYesNo" id="elimNo" value="no">
+                        <label for="elimNo">
+                            No&emsp;
+                        </label>
+                    </span>
+                    <span class="radio">
+                        <input type="radio" name="elimYesNo" id="elimYes" value="yes">
+                        <label for="elimYes">
+                            Yes
+                        </label>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td>
                     Do you have medical conditions or diagnoses that restrict your ability to manage your elimination most of the time? Please list all if more than one.
                 </td>
                 <td>
@@ -74,19 +93,19 @@ function eliminating_registration_function() {
                         <div class="radio">
                             <input type="radio" name="elimLonger" id="elimLongerThree" value="three">
                             <label for="elimLongerThree">
-                                At least three times as long, compared to an average person my age without my restrictions.
+                                At least three times as long, compared to an average person my age without my restrictions
                             </label>
                         </div>
                         <div class="radio">
                             <input type="radio" name="elimLonger" id="elimLongerTwo" value="two">
                             <label for="elimLongerTwo">
-                                At least two times as long, compared to an average person my age without my restrictions.
+                                At least two times as long, compared to an average person my age without my restrictions
                             </label>
                         </div>
                         <div class="radio">
                             <input type="radio" name="elimLonger" id="elimLongerLittle" value="little">
                             <label for="elimLongerLittle">
-                                A little bit longer, compared to an average person my age without my restrictions.
+                                A little bit longer, compared to an average person my age without my restrictions
                             </label>
                         </div>
                     <td>
