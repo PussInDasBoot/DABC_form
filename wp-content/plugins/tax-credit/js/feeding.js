@@ -22,6 +22,7 @@ export function feeding() {
     let eatingTherapy = ``;
     let eatingMedication = ``;
     let eatingBegin = ``;
+    let eatingUnableBegin = ``;
 
     // How much longer it takes
     const eatingLongerEl = document.querySelector('input[name=eatingLonger]:checked');
@@ -91,12 +92,19 @@ export function feeding() {
             eatingMedication = `I take ${document.getElementById("eatingMedicationInput").value}`;
         }
     }
-       
-    if (document.getElementById('eatingRestrUnable').checked || document.getElementById('eatingRestrSevere').checked) {    
+
+    // eating restriction began   
+    if (document.getElementById('eatingRestrSevere').checked) {
         const eatingBeginSelect = document.getElementById('eatingBegin');
         eatingBegin = `My restriction began in ${eatingBeginSelect.options[eatingBeginSelect.selectedIndex].value}`;
     }
 
+    if (document.getElementById("eatingRestrUnable").checked) {
+        const eatingBeginUnableSelect = document.getElementById('eatingUnableBegin');
+        eatingUnableBegin = `My restriction began in ${eatingBeginUnableSelect.options[eatingBeginUnableSelect.selectedIndex].value}`;
+    }
+
+    // eating restriction resolved
     let eatingResolve = ``;
     const eatingResolveSelect = document.getElementById('eatingResolveYearSelect');
     if (document.getElementById("eatingResolveNo").checked) {
@@ -106,6 +114,15 @@ export function feeding() {
         eatingResolve = `My restriction resolved in ${eatingResolveSelect.options[eatingResolveSelect.selectedIndex].value}`;
     }
 
+    let eatingUnableResolve = ``;
+    const eatingResolveUnableSelect = document.getElementById('eatingResolveYearUnableSelect');
+    if (document.getElementById("eatingResolveUnableNo").checked) {
+        eatingUnableResolve = `My restriction is ongoing`;
+    }
+    if (document.getElementById("eatingResolveUnableYes").checked) {
+        eatingUnableResolve = `My restriction resolved in ${eatingResolveUnableSelect.options[eatingResolveUnableSelect.selectedIndex].value}`;
+    }
+
     // Preparing
     let preparingDescribe = ``;
     let preparingLonger = ``;
@@ -113,6 +130,7 @@ export function feeding() {
     let preparingTherapy = ``;
     let preparingMedication = ``;
     let preparingBegin = ``;
+    let preparingUnableBegin = ``;
     let preparingDifficulties = ``;
 
     // How much longer it takes
@@ -160,7 +178,7 @@ export function feeding() {
     }
 
     if (document.getElementById("preparingTherapyYes").checked) {
-        //preparingDevices
+        // PreparingDevices
         let preparingDevices = document.querySelectorAll('input[name=preparingDevices]:checked');
         if (preparingDevices[0]) {
             let preparingDevicesArray = [];
@@ -175,7 +193,7 @@ export function feeding() {
             preparingDevice += arrayToSentence(preparingDevicesArray);
         }
 
-        //preparingTherapy
+        // PreparingTherapy
         let preparingTherapies = document.querySelectorAll('input[name=preparingTherapy]:checked');
         if (preparingTherapies[0]) {
             let preparingTherapiesArray = [];
@@ -190,17 +208,24 @@ export function feeding() {
             preparingTherapy += arrayToSentence(preparingTherapiesArray);
         }
 
-        //preparingMedication
+        // PreparingMedication
         if (document.getElementById('preparingTherapyMedication').checked) {
             preparingMedication = `I take ${document.getElementById("preparingMedicationInput").value}`;
         }
     }
-        
-    if (document.getElementById('prepareRestrUnable').checked || document.getElementById('prepareRestrSevere').checked) {
+     
+    // Preparing restriction began   
+    if (document.getElementById('prepareRestrSevere').checked) {
         const preparingBeginSelect = document.getElementById('preparingBegin');
         preparingBegin = `My restriction began in ${preparingBeginSelect.options[preparingBeginSelect.selectedIndex].value}`;
     }
 
+    if (document.getElementById("prepareRestrUnable").checked) {
+        const preparingBeginUnableSelect = document.getElementById('preparingUnableBegin');
+        preparingUnableBegin = `My restriction began in ${preparingBeginUnableSelect.options[preparingBeginUnableSelect.selectedIndex].value}`;
+    }
+
+    // Preparing restriction resolved
     let preparingResolve = ``;
     const preparingResolveSelect = document.getElementById('preparingResolveYearSelect');
     if (document.getElementById("preparingResolveNo").checked) {
@@ -210,13 +235,22 @@ export function feeding() {
         preparingResolve = `My restriction resolved in ${preparingResolveSelect.options[preparingResolveSelect.selectedIndex].value}`;
     }
 
+    let preparingUnableResolve = ``;
+    const preparingResolveUnableSelect = document.getElementById('preparingResolveYearUnableSelect');
+    if (document.getElementById("preparingResolveUnableNo").checked) {
+        preparingUnableResolve = `My restriction is ongoing`;
+    }
+    if (document.getElementById("preparingResolveUnableYes").checked) {
+        preparingUnableResolve = `My restriction resolved in ${preparingResolveUnableSelect.options[preparingResolveUnableSelect.selectedIndex].value}`;
+    }
+
     // Compile
     if (document.getElementById('feedingYes').checked) {
         const email = document.getElementById("feeding");
         email.innerHTML = `Feeding:`
         const ul = document.createElement('ul');
         email.appendChild(ul);
-        const feedingArray = [feedingDiagnosis, feedingAble, eatingLonger, eatingDescribe, eatingDevice,  eatingTherapy, eatingMedication, eatingBegin, eatingResolve, preparingLonger, preparingDescribe, preparingDevice, preparingDifficulties, preparingTherapy, preparingMedication, preparingBegin, preparingResolve];
+        const feedingArray = [feedingDiagnosis, feedingAble, eatingLonger, eatingDescribe, eatingDevice,  eatingTherapy, eatingMedication, eatingBegin, eatingResolve, eatingUnableBegin, eatingUnableResolve, preparingLonger, preparingDescribe, preparingDevice, preparingDifficulties, preparingTherapy, preparingMedication, preparingBegin, preparingUnableBegin, preparingResolve, preparingUnableResolve];
         for (const w of feedingArray) {
             if (w) {
                 const li = document.createElement("li");

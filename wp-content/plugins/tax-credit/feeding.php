@@ -284,52 +284,6 @@ function feeding_registration_function() {
                 </tr>
                 <tr>
                     <td>
-                        Has your restriction resolved?
-                    </td>
-                    <td>
-                        <div class="radio">
-                            <input type="radio" name="eatingResolve" id="eatingResolveNo" value="no">
-                            <label for="eatingResolveNo">
-                                No 
-                            </label>
-                        </div>
-                        <div class="radio">
-                            <input type="radio" name="eatingResolve" id="eatingResolveYes" value="yes">
-                            <label for="eatingResolveYes">
-                                Yes
-                            </label>
-                        </div>
-                        <div id="eatingResolveYear" hidden>
-                            In which year was it resolved?
-                        <select id="eatingResolveYear">
-                        '; 
-                        
-                            for ($i = date('Y') ; $i > 1950; $i--) {
-                                echo "<option>$i</option>";
-                            };
-                        
-                        echo '</select>
-                    </td>
-                </tr>
-            </tbody>
-            <tbody id="eatingUnable" hidden>
-                <tr>
-                    <td>
-                        What year did your restriction with eating begin?
-                    </td>
-                    <td>
-                        <select name="eatingBegin">
-                        '; 
-                        
-                            for ($i = date('Y') ; $i > 1950; $i--) {
-                                echo "<option>$i</option>";
-                            };
-                        
-                        echo '</select>
-                    </td>
-                </tr>
-                <tr>
-                    <td>
                         Has your restriction with eating resolved?
                     </td>
                     <td>
@@ -347,7 +301,53 @@ function feeding_registration_function() {
                         </div>
                         <div id="eatingResolveYear" hidden>
                             In which year was it resolved?
-                        <select id="eatingResolveYear">
+                        <select id="eatingResolveYearSelect">
+                        '; 
+                        
+                            for ($i = date('Y') ; $i > 1950; $i--) {
+                                echo "<option>$i</option>";
+                            };
+                        
+                        echo '</select>
+                    </td>
+                </tr>
+            </tbody>
+            <tbody id="eatingUnable" hidden>
+                <tr>
+                    <td>
+                        What year did your restriction with eating begin?
+                    </td>
+                    <td>
+                        <select id="eatingUnableBegin">
+                        '; 
+                        
+                            for ($i = date('Y') ; $i > 1950; $i--) {
+                                echo "<option>$i</option>";
+                            };
+                        
+                        echo '</select>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        Has your restriction with eating resolved?
+                    </td>
+                    <td>
+                        <div class="radio">
+                            <input type="radio" name="eatingResolveUnable" id="eatingResolveUnableNo" value="no">
+                            <label for="eatingResolveUnableNo">
+                                No 
+                            </label>
+                        </div>
+                        <div class="radio">
+                            <input type="radio" name="eatingResolveUnable" id="eatingResolveUnableYes" value="yes">
+                            <label for="eatingResolveUnableYes">
+                                Yes
+                            </label>
+                        </div>
+                        <div id="eatingResolveYearUnable" hidden>
+                            In which year was it resolved?
+                        <select id="eatingResolveYearUnableSelect">
                         '; 
                         
                             for ($i = date('Y') ; $i > 1950; $i--) {
@@ -602,7 +602,7 @@ function feeding_registration_function() {
                 </tr>
                 <tr>
                     <td>
-                        Has your restriction resolved?
+                        Has your restriction with preparing food resolved?
                     </td>
                     <td>
                         <div class="radio">
@@ -636,7 +636,7 @@ function feeding_registration_function() {
                         What year did your restriction with preparing food begin?
                     </td>
                     <td>
-                        <select id="preparingBegin">
+                        <select id="preparingUnableBegin">
                         '; 
                         
                             for ($i = date('Y') ; $i > 1950; $i--) {
@@ -652,20 +652,20 @@ function feeding_registration_function() {
                     </td>
                     <td>
                         <div class="radio">
-                            <input type="radio" name="preparingResolve" id="preparingResolveNo" value="no">
-                            <label for="preparingResolveNo">
+                            <input type="radio" name="preparingResolveUnable" id="preparingResolveUnableNo" value="no">
+                            <label for="preparingResolveUnableNo">
                                 No 
                             </label>
                         </div>
                         <div class="radio">
-                            <input type="radio" name="preparingResolve" id="preparingResolveYes" value="yes">
-                            <label for="preparingResolveYes">
+                            <input type="radio" name="preparingResolveUnable" id="preparingResolveUnableYes" value="yes">
+                            <label for="preparingResolveUnableYes">
                                 Yes
                             </label>
                         </div>
-                        <div id="preparingResolveYear" hidden>
+                        <div id="preparingResolveYearUnable" hidden>
                             In which year was it resolved?
-                        <select id="preparingResolveYearSelect">
+                        <select id="preparingResolveYearUnableSelect">
                         '; 
                         
                             for ($i = date('Y') ; $i > 1950; $i--) {
