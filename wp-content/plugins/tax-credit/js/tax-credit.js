@@ -11,6 +11,10 @@ import { life } from './life.js'
 document.addEventListener("DOMContentLoaded", function(e) {
     const submitButton = document.querySelector("#submit");
     submitButton.onclick = function() {
+        const elements = ["vision", "speech", "hearing", "eliminating", "walking", "feeding", "dressing", "mental", "life"];
+        for (const el of elements) {
+            document.getElementById(el).innerHTML = ``;
+        }
         vision();
         speech();
         hearing();
@@ -21,6 +25,7 @@ document.addEventListener("DOMContentLoaded", function(e) {
         mental();
         life();
     }
+
     const accordions = document.getElementsByClassName("accordion");
 
     for (const acc of accordions) {
@@ -54,7 +59,6 @@ document.addEventListener("DOMContentLoaded", function(e) {
             }
         }
     })
-
     
 
     /*

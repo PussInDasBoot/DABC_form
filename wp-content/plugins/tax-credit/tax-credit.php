@@ -193,7 +193,7 @@ function vision_registration_function() {
             </tbody>
             <tr>
                 <td>
-                    What year did your restriction with vision begin?
+                    What year did your restriction begin?
                 </td>
                 <td>
                     <select id="visionBegin">
@@ -208,7 +208,7 @@ function vision_registration_function() {
             </tr>
             <tr>
                 <td>
-                    Has your vision restriction resolved?
+                    Has your restriction resolved?
                 </td>
                 <td>
                     <div class="radio">
