@@ -252,7 +252,7 @@ function hearing_registration_function() {
                 </td>
                 <td>
                     <div class="radio">
-                        <input type="radio" name="hearingResolve" id="hearingResolveNo" value="no">
+                        <input type="radio" name="hearingResolve" id="hearingResolveNo" value="no" checked>
                         <label for="hearingResolveNo">
                             No 
                         </label>

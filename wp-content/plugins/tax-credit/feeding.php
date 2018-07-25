@@ -288,7 +288,7 @@ function feeding_registration_function() {
                     </td>
                     <td>
                         <div class="radio">
-                            <input type="radio" name="eatingResolve" id="eatingResolveNo" value="no">
+                            <input type="radio" name="eatingResolve" id="eatingResolveNo" value="no" checked>
                             <label for="eatingResolveNo">
                                 No 
                             </label>
@@ -606,7 +606,7 @@ function feeding_registration_function() {
                     </td>
                     <td>
                         <div class="radio">
-                            <input type="radio" name="preparingResolve" id="preparingResolveNo" value="no">
+                            <input type="radio" name="preparingResolve" id="preparingResolveNo" value="no" checked>
                             <label for="preparingResolveNo">
                                 No 
                             </label>

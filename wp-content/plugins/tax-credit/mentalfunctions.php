@@ -393,7 +393,7 @@ function mental_registration_function() {
                 </td>
                 <td>
                     <div class="radio">
-                        <input type="radio" name="mentalResolve" id="mentalResolveNo" value="no">
+                        <input type="radio" name="mentalResolve" id="mentalResolveNo" value="no" checked>
                         <label for="mentalResolveNo">
                             No 
                         </label>

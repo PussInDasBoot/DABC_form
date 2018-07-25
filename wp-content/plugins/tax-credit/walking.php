@@ -377,7 +377,7 @@ function walking_registration_function() {
                 </td>
                 <td>
                     <div class="radio">
-                        <input type="radio" name="walkingResolve" id="walkingResolveNo" value="no">
+                        <input type="radio" name="walkingResolve" id="walkingResolveNo" value="no" checked>
                         <label for="walkingResolveNo">
                             No 
                         </label>

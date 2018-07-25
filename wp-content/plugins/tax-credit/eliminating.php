@@ -289,7 +289,7 @@ function eliminating_registration_function() {
                 </td>
                 <td>
                     <div class="radio">
-                        <input type="radio" name="elimResolve" id="elimResolveNo" value="no">
+                        <input type="radio" name="elimResolve" id="elimResolveNo" value="no" checked>
                         <label for="elimResolveNo">
                             No 
                         </label>

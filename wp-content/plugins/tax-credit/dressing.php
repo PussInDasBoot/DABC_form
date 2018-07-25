@@ -300,7 +300,7 @@ function dressing_registration_function() {
                 </td>
                 <td>
                     <div class="radio">
-                        <input type="radio" name="dressingResolve" id="dressingResolveNo" value="no">
+                        <input type="radio" name="dressingResolve" id="dressingResolveNo" value="no" checked>
                         <label for="dressingResolveNo">
                             No 
                         </label>

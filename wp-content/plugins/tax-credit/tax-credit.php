@@ -212,7 +212,7 @@ function vision_registration_function() {
                 </td>
                 <td>
                     <div class="radio">
-                        <input type="radio" name="visionResolve" id="visionResolveNo" value="no">
+                        <input type="radio" name="visionResolve" id="visionResolveNo" value="no" checked>
                         <label for="visionResolveNo">
                             No 
                         </label>

@@ -276,7 +276,7 @@ function speaking_registration_function() {
                 </td>
                 <td>
                     <div class="radio">
-                        <input type="radio" name="speechResolve" id="speechResolveNo" value="no">
+                        <input type="radio" name="speechResolve" id="speechResolveNo" value="no" checked>
                         <label for="speechResolveNo">
                             No 
                         </label>

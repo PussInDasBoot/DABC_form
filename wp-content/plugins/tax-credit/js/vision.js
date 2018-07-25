@@ -14,6 +14,14 @@ export function vision() {
     let visionDescribe = ``;
     let visionLonger = ``;
     let visionDevice = ``;
+    let visionExplain = ``;
+
+    // Explanation of vision restriction
+    const visionExplainEl = document.getElementById('visionRestrExplainInput');
+    if (visionExplainEl.value) {
+        visionExplain = visionExplainEl.value;
+    }
+
 
     // Frequency of vision restrictions
     const visionLongerEl = document.querySelector('input[name=visionRestrFreq]:checked');
@@ -61,7 +69,7 @@ export function vision() {
         email.innerHTML = `Vision:`
         const ul = document.createElement('ul');
         email.appendChild(ul);
-        const visionArray = [visionDiagnosis, visionAble, visionLonger, visionDescribe, visionDevice, visionBegin, visionResolve];
+        const visionArray = [visionDiagnosis, visionAble, visionLonger, visionExplain, visionDescribe, visionDevice, visionBegin, visionResolve];
         for (const w of visionArray) {
             if (w) {
                 const li = document.createElement("li");
