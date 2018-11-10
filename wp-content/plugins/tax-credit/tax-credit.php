@@ -12,8 +12,7 @@ require_once dirname( __FILE__ ) .'/mentalfunctions.php';
 require_once dirname( __FILE__ ) .'/lifesustaining.php';
 
 
-wp_register_script('tax-credit', plugins_url('/js/tax-credit.min.js', __FILE__ ));
-wp_enqueue_script('tax-credit');
+wp_enqueue_script('tax-credit', plugins_url('/js/tax-credit.min.js', __FILE__), array('jquery'));
 
 wp_register_style('tax-credit', plugins_url('/css/tax-credit.css', __FILE__), array(), '1', 'all');
 wp_enqueue_style( 'tax-credit' );
@@ -239,6 +238,18 @@ function vision_registration_function() {
         </table>
     </div>
     ';
+}
+
+// Send email
+if (isset($_POST['email'])) {
+    insert();
+}
+
+function insert() {
+    $headers .= "Content-Type: text/html; charset=ISO-8859-1\r\n";
+    // mail("pommy.shortcake@gmail.com","My subject",$_POST['email'], $headers);
+    echo "The insert function is called.";
+    exit;
 }
 
 // Register a new shortcode: [vision]

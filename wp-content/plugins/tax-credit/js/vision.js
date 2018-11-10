@@ -64,7 +64,10 @@ export function vision() {
     }
 
     // Compile
+    let visionSection = false;
+
     if (document.getElementById('visionYes').checked) {
+        visionSection = true;
         const email = document.getElementById("vision");
         email.innerHTML = `Vision:`
         const ul = document.createElement('ul');
@@ -78,4 +81,5 @@ export function vision() {
             }
         }
     }
+    return visionSection;
 }
