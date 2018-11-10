@@ -163,7 +163,15 @@ function life_registration_function() {
             </tr>
         </table>
     </div>
-    <button id="submit">Submit</button>
+    <form>
+        <p>
+            Please enter your email address to have your documents sent to you:
+        </p>
+        <input type="email" id="emailAddress" placeholder="you@email.com" required/>
+        <input type="submit" class="email" id="submit" value="Send Email"/>
+    </form>
+    <div id="notice" hidden>
+    </div>
     ';
 }
 

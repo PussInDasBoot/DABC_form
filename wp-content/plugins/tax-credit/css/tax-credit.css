@@ -27,6 +27,10 @@ div.panel {
     display: none;
 }
 
+button.email {
+    height: 40px;
+}
+
 tr {
     vertical-align: top;
     padding: 10px;

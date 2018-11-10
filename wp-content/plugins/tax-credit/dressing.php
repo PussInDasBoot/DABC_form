@@ -141,31 +141,31 @@ function dressing_registration_function() {
                         </div>
                         <div>
                             <input type="checkbox" name="dressingDifficult" id="dressingDifficultShirts" value="shirts">
-                            <label for="dressingDescribeShirts">
+                            <label for="dressingDifficultShirts">
                                 Shirts
                             </label>
                         </div>
                         <div>
                             <input type="checkbox" name="dressingDifficult" id="dressingDifficultShoes" value="shoes">
-                            <label for="dressingDescribeShoes">
+                            <label for="dressingDifficultShoes">
                                 Shoes
                             </label>
                         </div>
                         <div>
                             <input type="checkbox" name="dressingDifficult" id="dressingDifficultCoats" value="coats">
-                            <label for="dressingDescribeCoats">
+                            <label for="dressingDifficultCoats">
                                 Coats
                             </label>
                         </div>
                         <div>
                             <input type="checkbox" name="dressingDifficult" id="dressingDifficultZippers" value="zippers">
-                            <label for="dressingDescribeZippers">
+                            <label for="dressingDifficultZippers">
                                 Zippers
                             </label>
                         </div>
                         <div>
                             <input type="checkbox" name="dressingDifficult" id="dressingDifficultButtons" value="buttons">
-                            <label for="dressingDescribeButtons">
+                            <label for="dressingDifficultButtons">
                                 Buttons
                             </label>
                         </div>

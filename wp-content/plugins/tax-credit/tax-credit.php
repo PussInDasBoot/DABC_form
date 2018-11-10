@@ -21,7 +21,7 @@ function vision_registration_function() {
 
  
     echo '
-    <p>This tool will create documents that will help you and your health care provider complete the application for the Disability Tax Credit, commonly referred to as the DTC.</p>
+    <p>This tool will create and email documents to you that will help you and your health care provider complete the application for the Disability Tax Credit, commonly referred to as the DTC.</p>
 
     <p>There are a couple different ways you can qualify for the DTC:</p>
 
@@ -29,7 +29,7 @@ function vision_registration_function() {
 
     <p>You are restricted in a health area if you are unable to do an activity or if you require longer to do an activity compared to an average person your age, even with appropriate medication, therapy or devices. For example, if you have a severe restriction with your vision which is corrected by wearing glasses, this restriction is not relevent to your Disability Tax Credit Application.</p>
 
-    <p>Do you have any restrictions in the following health areas? Complete all sections that apply:</p>
+    <p>Do you have any restrictions in the following health areas? Please complete all sections that apply and then enter your email address to receive your documents and further instructions on how to apply for the DTC.</p>
 
 
     <button class="accordion">Vision</button>
@@ -242,13 +242,13 @@ function vision_registration_function() {
 
 // Send email
 if (isset($_POST['email'])) {
-    insert();
+    email();
 }
 
-function insert() {
+function email() {
     $headers .= "Content-Type: text/html; charset=ISO-8859-1\r\n";
-    // mail("pommy.shortcake@gmail.com","My subject",$_POST['email'], $headers);
-    echo "The insert function is called.";
+    mail($_POST['emailAddress'],"Next Steps for Disability Tax Credit (DTC) Application",$_POST['email'], $headers);
+    error_log("Email", 0);
     exit;
 }
 
