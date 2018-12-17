@@ -157,6 +157,13 @@ function eliminating_registration_function() {
                                 Incontinence (bladder)
                             </label>
                         </div>
+                        <div>
+                            <input type="checkbox" name="elimDescribe" id="elimDescribeOther" value="other">
+                            <label for="elimDescribeOther">
+                                Other:
+                            </label>
+                            <input type="text" id="elimDescribeOtherInput"></input>     
+                        </div>
                     </td>
                 </tr>
                 <tr>

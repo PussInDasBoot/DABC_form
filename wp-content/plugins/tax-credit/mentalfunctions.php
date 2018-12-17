@@ -280,7 +280,54 @@ function mental_registration_function() {
                         </label>    
                     </div>
                     <div id="mentalCrisisLine" hidden>
-                        Info about crisis line
+                        <p>
+                            If you are thinking about suicide, you don’t have to face it alone. Reach out today. </p>
+                        <p>
+                            Crisis Text Line: Text HOME to 686868 from anywhere in Canada</p>
+                        <ul>
+                            <li>
+                                Coastal Region
+                                <ul>
+                                    <li>
+                                        <a href="https://crisiscentre.bc.ca/">Vancouver Crisis Centre</a>
+                                        
+                                    </li>
+                                    <li>
+                                        <a href="https://crisiscentrechat.ca/">Crisis Chat</a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li>
+                                Northern BC
+                                <ul>
+                                    <li>
+                                        <a href="http://www.northernbccrisissuicide.ca/">Prince George Crisis Line</a>
+                                        
+                                    </li>
+                                    <li>
+                                        Youth Support: (250) 564-8336
+                                    </li>
+                                    <li>
+                                        <a href="http://www.northernyouthonline.ca/">Crisis Chat</a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li>
+                                Vancouver Island
+                                <ul>
+                                    <li>
+                                        <a href="https://www.vicrisis.ca/">Vancouver Island Crisis Line &amp; Chat</a>
+                                        
+                                    </li>
+                                    <li>
+                                        Crisis Text: (250) 800-3806
+                                    </li>
+                                    <li>
+                                        <a href="https://www.vicrisis.ca/">Crisis Chat</a>
+                                    </li>
+                                </ul>
+                            </li>
+                        </ul>
                     </div>
                     <div>
                         <input type="checkbox" name="mentalProblem" id="mentalProblemOther" value="other">

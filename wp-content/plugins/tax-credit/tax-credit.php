@@ -25,9 +25,14 @@ function vision_registration_function() {
 
     <p>There are a couple different ways you can qualify for the DTC:</p>
 
-    <p>You can qualify for the Disability Tax Credit if you have one severe restriction in the following categories or two or more significant restrictions. Restrictions that occur 90% of the time are most relevent.</p>
+    <ol>
+        <li>If you have <b>one severe restriction*</b> in the categories below
+        </li>
+        <li>If you have <b>two or more significant restrictions*</b> in the categories below<br><em>Restrictions that occur 90% of the time are most relevant.</em>
+        </li>
+    </ol>
 
-    <p>You are restricted in a health area if you are unable to do an activity or if you require longer to do an activity compared to an average person your age, even with appropriate medication, therapy or devices. For example, if you have a severe restriction with your vision which is corrected by wearing glasses, this restriction is not relevent to your Disability Tax Credit Application.</p>
+    <p>*You are restricted in a health area if you are unable to do an activity or if you require longer to do an activity compared to an average person your age, even with appropriate medication, therapy or devices. For example, if you have a severevisual impairment that is corrected by wearing glasses, this restriction is not relevant to your Disability Tax Credit Application.</p>
 
     <p>Do you have any restrictions in the following health areas? Please complete all sections that apply and then enter your email address to receive your documents and further instructions on how to apply for the DTC.</p>
 
@@ -163,6 +168,13 @@ function vision_registration_function() {
                             <label for="visionEffectsFlashing">
                                 Flashing lights/wavy lines in vision
                             </label>
+                        </div>
+                        <div>
+                            <input type="checkbox" name="visionEffects" id="visionOther" value="other">
+                            <label for="visionOther">
+                                Other:
+                            </label>
+                            <input type="text" id="visionOtherInput"></input>
                         </div>
                     </td>
                 </tr>
