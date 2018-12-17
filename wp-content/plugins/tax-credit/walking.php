@@ -227,13 +227,6 @@ function walking_registration_function() {
                                 Every 30 minutes
                             </label>
                         </div>
-                        <div>
-                            <input type="checkbox" name="walkingFreq" id="walkingFreqOther" value="other">
-                            <label for="walkingFreqOther">
-                                Other:
-                            </label>
-                            <input type="text" id="walkingFreqOtherInput"></input>     
-                        </div>
                     <td>
                 </tr>
                 <tr>

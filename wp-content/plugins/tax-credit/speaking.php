@@ -145,13 +145,6 @@ function speaking_registration_function() {
                                 Poor enunciation
                             </label>
                         </div>
-                        <div>
-                            <input type="checkbox" name="speechDescribe" id="speechDescribeOther" value="other">
-                            <label for="speechDescribeOther">
-                                Other:
-                            </label>
-                            <input type="text" id="speechDescribeOtherInput"></input>     
-                        </div>
                     </td>
                 </tr>
                 <tr>

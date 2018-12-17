@@ -121,13 +121,6 @@ function dressing_registration_function() {
                                 Limited range of motion
                             </label>
                         </div>
-                        <div>
-                            <input type="checkbox" name="dressingDescribe" id="dressingDescribeOther" value="other">
-                            <label for="dressingDescribeOther">
-                                Other:
-                            </label>
-                            <input type="text" id="dressingDescribeOtherInput"></input>     
-                        </div>
                     </td>
                     </tr>
                     <td>
@@ -175,13 +168,6 @@ function dressing_registration_function() {
                             <label for="dressingDifficultButtons">
                                 Buttons
                             </label>
-                        </div>
-                        <div>
-                            <input type="checkbox" name="dressingDifficult" id="dressingDifficultOther" value="other">
-                            <label for="dressingDifficultOther">
-                                Other:
-                            </label>
-                            <input type="text" id="dressingDifficultOtherInput"></input>     
                         </div>
                     </td>
                 </tr>
