@@ -10,9 +10,9 @@ import { life } from './life.js'
 
 document.addEventListener("DOMContentLoaded", function(e) {
     const submitButton = document.querySelector("#submit");
+    const elements = ["vision", "speech", "hearing", "eliminating", "walking", "feeding", "dressing", "mental", "life"];
     submitButton.onclick = function(e) {
         e.preventDefault();
-        const elements = ["vision", "speech", "hearing", "eliminating", "walking", "feeding", "dressing", "mental", "life"];
         for (const el of elements) {
             document.getElementById(el).innerHTML = ``;
         }
@@ -292,6 +292,22 @@ document.addEventListener("DOMContentLoaded", function(e) {
             } else {
                 panel.style.display = "block";
             }
+        }
+    }
+
+    function handleClick(el) {
+        document.getElementById(`${el}_button`).classList.toggle("active");
+        const section = document.getElementById(`${el}_section`)
+        if (section.style.display === "block") {
+            section.style.display = "none";
+        } else {
+            section.style.display = "block";
+        }
+    }
+
+    for (const el of elements) {
+        document.getElementById(`${el}No`).onclick = function() {
+            handleClick(el);
         }
     }
 

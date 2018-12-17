@@ -10,8 +10,8 @@ function feeding_registration_function() {
 
  
     echo '
-    <button class="accordion">Eating and Preparing Food</button>
-    <div class="panel">
+    <button id="feeding_button" class="accordion">Eating and Preparing Food</button>
+    <div id="feeding_section" class="panel">
       <table>
             <tr>
                 <td>

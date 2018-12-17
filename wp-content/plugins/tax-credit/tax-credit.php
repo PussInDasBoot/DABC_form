@@ -37,8 +37,8 @@ function vision_registration_function() {
     <p>Do you have any restrictions in the following health areas? Please complete all sections that apply and then enter your email address to receive your documents and further instructions on how to apply for the DTC.</p>
 
 
-    <button class="accordion">Vision</button>
-    <div class="panel">
+    <button id="vision_button" class="accordion">Vision</button>
+    <div id="vision_section" class="panel">
         <table>
             <tr>
                 <td>

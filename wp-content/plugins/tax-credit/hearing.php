@@ -9,8 +9,8 @@ function hearing_registration_function() {
 
  
     echo '
-    <button class="accordion">Hearing</button>
-    <div class="panel">
+    <button id="hearing_button" class="accordion">Hearing</button>
+    <div id="hearing_section" class="panel">
       <table>
             <tr>
                 <td>

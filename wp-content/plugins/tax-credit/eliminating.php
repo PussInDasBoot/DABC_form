@@ -10,8 +10,8 @@ function eliminating_registration_function() {
 
  
     echo '
-    <button class="accordion">Eliminating</button>
-    <div class="panel">
+    <button id="eliminating_button" class="accordion">Eliminating</button>
+    <div id="eliminating_section" class="panel">
       <table>
             <tr>
                 <td>
@@ -19,8 +19,8 @@ function eliminating_registration_function() {
                 </td>
                 <td>
                     <span class="radio">
-                        <input type="radio" name="elimYesNo" id="elimNo" value="no">
-                        <label for="elimNo">
+                        <input type="radio" name="elimYesNo" id="eliminatingNo" value="no">
+                        <label for="eliminatingNo">
                             No&emsp;
                         </label>
                     </span>

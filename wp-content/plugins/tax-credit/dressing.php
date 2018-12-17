@@ -10,8 +10,8 @@ function dressing_registration_function() {
 
  
     echo '
-    <button class="accordion">Dressing</button>
-    <div class="panel">
+    <button id="dressing_button" class="accordion">Dressing</button>
+    <div id="dressing_section" class="panel">
         <table>
             <tr>
                 <td>

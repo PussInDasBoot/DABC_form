@@ -10,8 +10,8 @@ function mental_registration_function() {
 
  
     echo '
-    <button class="accordion">Mental Functions</button>
-    <div class="panel">
+    <button id="mental_button" class="accordion">Mental Functions</button>
+    <div id="mental_section" class="panel">
       <table>
             <tr>
                 <td>

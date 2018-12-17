@@ -10,8 +10,8 @@ function speaking_registration_function() {
 
  
     echo '
-    <button class="accordion">Speaking</button>
-    <div class="panel">
+    <button id="speech_button" class="accordion">Speaking</button>
+    <div id="speech_section" class="panel">
       <table>
             <tr>
                 <td>
