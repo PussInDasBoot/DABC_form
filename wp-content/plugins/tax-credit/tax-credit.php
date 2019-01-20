@@ -169,6 +169,13 @@ function vision_registration_function() {
                                 Flashing lights/wavy lines in vision
                             </label>
                         </div>
+                        <div>
+                            <input type="checkbox" name="visionEffects" id="visionEffectsOther" value="other">
+                            <label for="visionEffectsOther">
+                                Other:
+                            </label>
+                            <input type="text" id="visionEffectsOtherInput"></input>
+                        </div>
                     </td>
                 </tr>
                 <tr>

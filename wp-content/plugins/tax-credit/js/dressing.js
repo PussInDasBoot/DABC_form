@@ -31,7 +31,11 @@ export function dressing() {
         dressingDescribe = `I am restricted by `;
         let dressingDescribes = [];
         for (const dd of document.querySelectorAll('input[name=dressingDescribe]:checked')) {
+            if (dd.id=="dressingDescribeOther") {
+                dressingDescribes.push(dd.nextElementSibling.nextElementSibling.value);
+            } else {
             dressingDescribes.push(dd.nextElementSibling.innerText.toLowerCase());
+            }
         }
         dressingDescribe += arrayToSentence(dressingDescribes);
     }
@@ -42,7 +46,11 @@ export function dressing() {
         dressingDifficult = `I have difficulty putting on the following articles of clothing: `
         let dressingDifficults = [];
         for (const dd of document.querySelectorAll('input[name=dressingDifficult]:checked')) {
+            if (dd.id=="dressingDifficultOther") {
+                dressingDifficults.push(dd.nextElementSibling.nextElementSibling.value);
+            } else {
             dressingDifficults.push(dd.nextElementSibling.innerText.toLowerCase());
+            }
         }
         dressingDifficult += arrayToSentence(dressingDifficults);
     }

@@ -11,7 +11,7 @@ export function vision() {
     if (document.getElementById("visionRestrUnable").checked) {
         visionAble = `I am legally blind, with a visual acuity of 20/200 or less with the Snellen Chart or field of vision in both eyes is 20 degrees or less.`;
     }
-    let visionDescribe = ``;
+    let visionEffect = ``;
     let visionLonger = ``;
     let visionDevice = ``;
     let visionExplain = ``;
@@ -31,14 +31,18 @@ export function vision() {
     }
 
     // Description of effects
-    const visionDescribeEls = document.querySelectorAll('input[name=visionEffects]:checked');
-    if (visionDescribeEls.length > 0) {
-        visionDescribe = `I experience `;
-        let visionDescribes = [];
-        for (const wc of visionDescribeEls) {
-            visionDescribes.push(wc.nextElementSibling.innerText.toLowerCase());
+    const visionEffectEls = document.querySelectorAll('input[name=visionEffects]:checked');
+    if (visionEffectEls.length > 0) {
+        visionEffect = `I experience `;
+        let visionEffects = [];
+        for (const wc of visionEffectEls) {
+            if (wc.id=="visionEffectsOther") {
+                visionEffects.push(wc.nextElementSibling.nextElementSibling.value);
+            } else {
+                visionEffects.push(wc.nextElementSibling.innerText.toLowerCase());
+            }
         }
-        visionDescribe += arrayToSentence(visionDescribes);
+        visionEffect += arrayToSentence(visionEffects);
     }
 
 
@@ -72,7 +76,7 @@ export function vision() {
         email.innerHTML = `Vision:`
         const ul = document.createElement('ul');
         email.appendChild(ul);
-        const visionArray = [visionDiagnosis, visionAble, visionLonger, visionExplain, visionDescribe, visionDevice, visionBegin, visionResolve];
+        const visionArray = [visionDiagnosis, visionAble, visionLonger, visionExplain, visionEffect, visionDevice, visionBegin, visionResolve];
         for (const w of visionArray) {
             if (w) {
                 const li = document.createElement("li");
